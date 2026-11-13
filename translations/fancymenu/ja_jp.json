@@ -1,0 +1,7 @@
+{
+ "fancymenu.actions.screens.finish.no_action_selected": "§x先にアクションを選んでください！",
+ "fancymenu.elements.browser.rinku_initializing.line_1": "ブラウザーを起動中…",
+ "fancymenu.elements.browser.rinku_initializing.line_2": "Rinkuの初期化が終わるのを待っています。",
+ "fancymenu.elements.browser.rinku_failed.line_1": "ブラウザーの初期化に失敗しました！",
+ "fancymenu.elements.browser.rinku_failed.line_2": "詳しくはゲームのログを確認してください。"
+}

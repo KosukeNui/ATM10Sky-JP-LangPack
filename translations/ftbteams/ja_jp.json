@@ -1,0 +1,19 @@
+{
+ "ftbteams.team_already_exists": "チーム%sはすでにあります！",
+ "ftbteams.out_of_lives": "パーティーの残機がなくなりました！新しいメンバーを招待できません！",
+ "ftbteams.lost_a_life": "パーティーの残機が1つ減りました！残り%s/%s！",
+ "ftbteams.kicked_no_lives": "プレイヤー%sは死亡し、パーティーの残機がないため追放されました！",
+ "ftbteams.disbanded_no_lives": "残機とプレイヤーがいなくなったため、パーティーは解散しました！",
+ "ftbteams.gui.toggle_chat": "クリックで切り替え",
+ "ftbteams.message.limited_lives": "パーティーの残機は残り%s/%sです！",
+ "ftbteams.message.limited_lives.warn": "死亡すると、パーティーから追放されます！",
+ "ftbteams.message.chat_redirected.on": "チャットのメッセージはチームチャットに送られます",
+ "ftbteams.message.chat_redirected.off": "チャットのメッセージは通常のチャットに送られます",
+ "ftbteams.message.added_stage": "チームのステージを追加しました: %s",
+ "ftbteams.message.no_team_stages": "このチームにはチームのステージがありません",
+ "ftbteams.message.removed_stage": "チームのステージを削除しました: %s",
+ "ftbteams.message.team_stages_header": "このチームのチームのステージ（%s個）:",
+ "ftbteams.message.set_property": "プロパティ%sを%sにしました",
+ "ftbteams.message.parse_failed": "値を解析できませんでした: %s",
+ "ftbteams.message.property_not_editable": "プロパティ%sは編集できません！"
+}

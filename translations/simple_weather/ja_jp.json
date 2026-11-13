@@ -1,0 +1,21 @@
+{
+ "config.client.simple_weather.override_weather": "有効",
+ "config.client.simple_weather.rain": "雨の設定",
+ "config.client.simple_weather.snow": "雪の設定",
+ "config.client.simple_weather.rain.rain_collision_percent": "地面で跳ねるパーティクルの確率",
+ "config.client.simple_weather.rain.rain_range": "範囲",
+ "config.client.simple_weather.weather_particle_count": "パーティクルの数",
+ "config.client.simple_weather.weather_particle_thunder_count": "雷雨のときのパーティクルの数",
+ "config.client.simple_weather.rain.rain_particle_alpha": "不透明度",
+ "config.client.simple_weather.rain.rain_lifetime": "表示時間",
+ "config.client.simple_weather.rain.rain_particle_scale": "大きさ",
+ "config.client.simple_weather.rain.rain_random": "乱れ",
+ "config.client.simple_weather.rain.rain_color_blending_frequency": "色を混ぜる頻度",
+ "config.client.simple_weather.rain.use_cached_aabb": "AABBを計算",
+ "config.client.simple_weather.rain.full_biome_lookup": "バイオームを細かく調べる",
+ "config.client.simple_weather.snow.snow_particle_scale": "大きさ",
+ "config.client.simple_weather.snow.snow_lifetime": "表示時間",
+ "config.client.simple_weather.snow.snow_range": "範囲",
+ "config.client.simple_weather.snow.snow_particle_alpha": "不透明度",
+ "config.client.simple_weather.snow.snow_outer_range": "外側の範囲"
+}

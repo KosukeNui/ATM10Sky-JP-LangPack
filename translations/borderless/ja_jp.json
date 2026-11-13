@@ -1,0 +1,23 @@
+{
+ "borderless.config.video_settings_button": "ボーダーレスウィンドウ…",
+ "borderless.config.video_settings_button.tooltip": "高度なフルスクリーンの設定ができる、ボーダーレスウィンドウの設定",
+ "borderless.config.title": "ボーダーレスウィンドウの設定",
+ "borderless.config.apply": "適用",
+ "borderless.config.enabled": "有効",
+ "borderless.config.enabled.tooltip": "ボーダーレスウィンドウを有効・無効にします",
+ "borderless.config.disabled.description": "ボーダーレスウィンドウは無効です。Minecraftの標準のフルスクリーンを使います。",
+ "borderless.config.fullscreen_mode": "フルスクリーンの表示モード",
+ "borderless.config.fullscreen_mode.best": "最適",
+ "borderless.config.fullscreen_mode.borderless": "ボーダーレス",
+ "borderless.config.fullscreen_mode.native": "ネイティブ",
+ "borderless.config.focus_loss": "フォーカスが外れたとき",
+ "borderless.config.focus_loss.do_nothing": "表示したまま",
+ "borderless.config.focus_loss.minimize": "最小化",
+ "borderless.config.focus_loss.switch_to_windowed": "ウィンドウモードに切り替え",
+ "borderless.config.changed": "フルスクリーンのモードが正しく反映されない場合は、Minecraftを再起動してみてください。それでも動かない場合は、OSが完全には対応していない可能性があります。",
+ "borderless.best": "今のOSに最適なフルスクリーンのモードを自動で選びます。おすすめのモードです。",
+ "borderless.borderless": "ウィンドウの幅と高さをモニターのビデオモードに合わせ、ウィンドウの枠を消してフルスクリーンのように見せる、ボーダーレスのフルスクリーンです。\n\nWindowsではこのモードが最適です。",
+ "borderless.native.do_nothing": "Minecraftの標準のフルスクリーンですが、フォーカスが外れてもウィンドウを表示したままにします。OSによっては、ウィンドウが常に手前に表示されることがあります。\n\nX11に対応したほとんどのLinuxディストリビューションでは、このモードが最適です。",
+ "borderless.native.minimize": "フォーカスが外れるとウィンドウを最小化する、Minecraftの標準のフルスクリーンです。\n\n不明なOSでは、このモードが最適です。",
+ "borderless.native.switch_to_windowed": "Minecraftの標準のフルスクリーンですが、フォーカスが外れるとウィンドウモードに切り替わります。"
+}

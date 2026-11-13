@@ -1,0 +1,12 @@
+{
+ "item.camol.camo_item": "カモフラージュブロック",
+ "item.camol.solid_camo_item": "形を保つカモフラージュブロック",
+ "item.camol.camo_item.camo": "カモフラージュブロック - %s",
+ "item.camol.solid_camo_item.camo": "形を保つカモフラージュブロック - %s",
+ "item.camol.camo_item.hover": "ブロックを右クリックすると、このブロックに見せかけます。偽装したブロックを右クリックすると元に戻します。",
+ "item.camol.camo_item.hover_type": "偽装されたブロックの当たり判定の形を使います。",
+ "item.camol.camo_item.hover_empty": "ブロックと一緒にクラフトしてください。",
+ "item.camol.solid_camo_item.hover": "ブロックを右クリックすると、このブロックに見せかけます。偽装したブロックを右クリックすると元に戻します。",
+ "item.camol.solid_camo_item.hover_type": "偽装に使ったブロックの当たり判定の形を使います。",
+ "item.camol.solid_camo_item.hover_empty": "ブロックと一緒にクラフトしてください。"
+}

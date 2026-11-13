@@ -1,0 +1,10 @@
+{
+ "fusion.resource_packs.requires_newer_version": "（Fusionの新しい版向け）",
+ "fusion.resource_packs.warning_screen.title": "Fusionの版の警告",
+ "fusion.resource_packs.warning_screen.message": "このリソースパックはFusionの新しい版向けに作られていて、今入っている版のFusionでは正しく動かないかもしれません。",
+ "fusion.resource_packs.warning_screen.confirmation": "それでもリソースパックを有効にしますか？",
+ "fusion.resource_packs.warning_screen.current_version": "入っている版:",
+ "fusion.resource_packs.warning_screen.required_version": "必要な版:",
+ "fusion.resource_packs.warning_screen.cancel": "いいえ",
+ "fusion.resource_packs.warning_screen.confirm": "はい"
+}

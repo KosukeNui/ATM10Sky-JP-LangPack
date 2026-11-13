@@ -1,0 +1,11 @@
+{
+ "hostilenetworks.gui.learner_empty.2": "",
+ "hostilenetworks.gui.mode.inference.desc": "模擬演算で出力が得られるが、",
+ "hostilenetworks.gui.mode.inference.desc2": "モデルはデータを得られない",
+ "hostilenetworks.gui.mode.training.desc": "模擬演算でモデルのデータが増えるが、",
+ "hostilenetworks.gui.mode.training.desc2": "出力は得られない",
+ "hostilenetworks.gui.mode.power": "消費電力: %s%%",
+ "hostilenetworks.gui.mode.speed": "模擬演算の速度: %s%%",
+ "hostilenetworks.fail.cannot_train": "模擬演算を開始できません\nこのモデルはこれ以上訓練できません",
+ "hostilenetworks.fail.buffering": "モデルの出力を一時保存しています"
+}

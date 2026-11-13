@@ -1,0 +1,16 @@
+{
+ "colorfulhearts.screen.configuration.title": "Colorful Hearts",
+ "colorfulhearts.screen.configuration.colors.category": "色",
+ "colorfulhearts.screen.health.title": "体力の色",
+ "colorfulhearts.screen.absorption.title": "衝撃吸収の色",
+ "colorfulhearts.options.button.health_colors": "体力",
+ "colorfulhearts.options.button.absorption_colors": "衝撃吸収",
+ "colorfulhearts.options.button.hearttype.normal": "通常",
+ "colorfulhearts.options.button.hearttype.poisoned": "毒",
+ "colorfulhearts.options.button.hearttype.withered": "衰弱",
+ "colorfulhearts.options.button.hearttype.frozen": "凍結",
+ "colorfulhearts.options.button.confirmsave": "保存して終わる",
+ "colorfulhearts.options.button.cancel": "キャンセル",
+ "colorfulhearts.options.button.vanillaheart.true": "バニラ: はい",
+ "colorfulhearts.options.button.vanillaheart.false": "バニラ: いいえ"
+}

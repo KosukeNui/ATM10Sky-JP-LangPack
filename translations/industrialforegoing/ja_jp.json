@@ -1,0 +1,17 @@
+{
+ "text.industrialforegoing.tooltip.data": "必要なデータ",
+ "block.industrialforegoing.simulated_hydroponic_bed": "シミュレーション式エーテルプランター",
+ "item.industrialforegoing.hydroponic_simulation_processor": "エーテルプランター用シミュレーションプロセッサー",
+ "entity.industrialforegoing.launcher_projectile_entity": "プランジャー",
+ "tooltip.industrialforegoing.hydroponic.simulating": "シミュレーション中: ",
+ "tooltip.industrialforegoing.hydroponic.nothing": "なし",
+ "tooltip.industrialforegoing.hydroponic.executions": "実行回数: ",
+ "tooltip.industrialforegoing.hydroponic.efficiency": "効率: ",
+ "tooltip.industrialforegoing.hydroponic.next_efficiency": "次の効率ボーナス: ",
+ "tooltip.industrialforegoing.hydroponic.potential_drops": "ドロップの候補: ",
+ "tooltip.industrialforegoing.hydroponic.drop_format": " - %s%s x %s",
+ "tooltip.titanium.facing_handler.simulation": "エーテルプランター用シミュレーションプロセッサー",
+ "tooltip.titanium.facing_handler.seed": "シミュレーションする種",
+ "tooltip.industrialforegoing.hydroponic.function_1": "* エーテルプランターで使うと作物のデータを集める",
+ "tooltip.industrialforegoing.hydroponic.function_2": "* シミュレーション式エーテルプランターで使うとドロップを得る"
+}

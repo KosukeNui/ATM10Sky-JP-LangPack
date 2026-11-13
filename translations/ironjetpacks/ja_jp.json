@@ -1,0 +1,5 @@
+{
+ "keybind.ironjetpacks.hud": "HUDの切り替え",
+ "tooltip.ironjetpacks.hud": "HUD",
+ "tooltip.ironjetpacks.toggle_hud": "HUDを切り替えました %s"
+}

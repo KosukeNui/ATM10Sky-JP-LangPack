@@ -1,0 +1,8 @@
+{
+ "eu_cost_transformer.tesseract_api.percentage": "%d%%",
+ "text.tesseract_api.mi_machine_batcher_recipe": "%sのレシピをまとめて実行できます。",
+ "text.tesseract_api.mi_machine_batcher_size_and_cost": "最大%d個ずつまとめて、EUコスト%sで実行します。",
+ "text.tesseract_api.spliterator": "、",
+ "text.tesseract_api.spliterator_last": "と",
+ "text.tesseract_api.tooltips_shift_required": "[Shift]を押すと情報を表示"
+}

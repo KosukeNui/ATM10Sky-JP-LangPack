@@ -1,0 +1,21 @@
+{
+ "block.spikyspikes.diamond_spike": "ダイヤモンドのトゲ",
+ "block.spikyspikes.diamond_spike.description": "倒したモブは、プレイヤーが倒したときと同じくすべてのルートを落とす。金床で剣のエンチャントのほとんどを付けられる。",
+ "block.spikyspikes.golden_spike": "金のトゲ",
+ "block.spikyspikes.golden_spike.description": "倒したモブは経験値だけを落とし、ルートは落とさない。",
+ "block.spikyspikes.iron_spike": "鉄のトゲ",
+ "block.spikyspikes.iron_spike.description": "倒したモブは通常のルートだけを落とし、経験値は落とさない。",
+ "block.spikyspikes.netherite_spike": "ネザライトのトゲ",
+ "block.spikyspikes.netherite_spike.description": "倒したモブは、プレイヤーが倒したときと同じくすべてのルートを落とす。金床で剣のエンチャントのほとんどを付けられる。爆発とウィザーに耐える。プレイヤーにはダメージを与えない。",
+ "block.spikyspikes.stone_spike": "石のトゲ",
+ "block.spikyspikes.stone_spike.description": "倒したモブはルートも経験値も落とさない。",
+ "block.spikyspikes.wooden_spike": "木のトゲ",
+ "block.spikyspikes.wooden_spike.description": "モブにゆっくりダメージを与えるが、とどめは刺さない。",
+ "death.attack.spike": "%1$sはトゲの少ない世界で眠りについた",
+ "death.attack.spike.player": "%1$sは%2$sから逃げようとしてトゲを見落とした",
+ "item.spikyspikes.spike.tooltip.damage": "ダメージ: %s",
+ "item.spikyspikes.spike.tooltip.hearts": "ハート%s個",
+ "item.spikyspikes.spike.tooltip.more": "%sを押し続けると詳しく表示",
+ "item.spikyspikes.spike.tooltip.shift": "Shift",
+ "itemGroup.spikyspikes.main": "Spiky Spikes"
+}

@@ -1,0 +1,8 @@
+{
+ "defaultoptions.configuration.defaultDifficulty": "初期設定の難易度",
+ "defaultoptions.configuration.defaultDifficulty.tooltip": "新しく作るワールドで最初に選ばれる難易度です。",
+ "defaultoptions.configuration.lockDifficulty": "難易度を固定",
+ "defaultoptions.configuration.lockDifficulty.tooltip": "オンにすると、新しいワールドの難易度を初期設定の難易度に固定します。外部のツールなしでは、プレイヤーは固定を解除できません！たぶんよくない考えです。おすすめしません。なんでこんな設定を追加してるんだろう？",
+ "defaultoptions.configuration.defaultResourcePacks": "初期設定のリソースパック",
+ "defaultoptions.configuration.defaultResourcePacks.tooltip": "初めて起動したときに有効にしておくリソースパックのIDです。"
+}

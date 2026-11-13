@@ -1,0 +1,22 @@
+{
+ "death.attack.productivemetalworks.foundry_damage": "%1$sは溶けてなくなった",
+ "death.attack.productivemetalworks.foundry_damage.1": "%1$sは溶けてなくなった",
+ "death.attack.productivemetalworks.foundry_damage.2": "%1$sはあやしい温泉を見つけた",
+ "death.attack.productivemetalworks.foundry_damage.3": "%1$sはおいしい溶けたおやつになった",
+ "death.attack.productivemetalworks.foundry_damage.4": "%1$sは煮すぎた",
+ "death.attack.productivemetalworks.foundry_damage.5": "%1$sは焼きすぎた",
+ "death.attack.productivemetalworks.foundry_damage.6": "%1$sは鋳造炉でソテーにされた",
+ "death.attack.productivemetalworks.foundry_damage.7": "%1$s、安らかに焼かれよ",
+ "death.attack.productivemetalworks.foundry_damage.8": "グレイビーソースが%1$sに言った。「君こそ最高の肉だ」",
+ "death.attack.productivemetalworks.foundry_damage.player.1": "%1$sは%2$sと焼きくれんぼをしていて溶けてなくなった",
+ "death.attack.productivemetalworks.foundry_damage.player.2": "%1$sは%2$sとはしゃいでいて、あやしい温泉を見つけた",
+ "death.attack.productivemetalworks.foundry_damage.player.3": "%1$sは%2$sとピクニック中に、おいしい溶けたおやつになった",
+ "death.attack.productivemetalworks.foundry_damage.player.4": "%1$sは%2$sとキャンプ中に煮すぎた",
+ "death.attack.productivemetalworks.foundry_damage.player.5": "%1$sは%2$sに焼かれた",
+ "death.attack.productivemetalworks.foundry_damage.player.6": "%2$sが見守るなか、%1$sは鋳造炉でソテーにされた",
+ "death.attack.productivemetalworks.foundry_damage.player.7": "%2$sは%1$sとの因縁にケリをつけた",
+ "death.attack.productivemetalworks.foundry_damage.player.8": "%2$sは%1$sを焼き網地獄に送った",
+ "productivemetalworks.information.upgrade.upgrade_stability.foundry_controller": "鋳造炉内での合金化を無効化します。",
+ "productivemetalworks.information.upgrade.upgrade_time.foundry_controller": "溶解と合金化を高速化します。\n   複数のアップグレードを使用できます。",
+ "productivemetalworks.information.upgrade.upgrade_time_2.foundry_controller": "通常と比較して2倍の効果があります。"
+}

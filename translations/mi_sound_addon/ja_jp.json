@@ -1,0 +1,7 @@
+{
+ "item.mi_sound_addon.mallet": "鋼鉄の木槌",
+ "message.mi_sound_addon.creative_tab": "MI Sound Addon",
+ "message.mi_sound_addon.tooltip": "機械を右クリックすると、音を消したり戻したりできる",
+ "message.mi_sound_addon.machine_silenced": "機械の音を消しました",
+ "message.mi_sound_addon.machine_unsilenced": "機械の音を戻しました"
+}

@@ -1,0 +1,5 @@
+{
+ "silentgems.configuration.features": "機能",
+ "silentgems.configuration.rabbitsProduceCoffee": "ウサギがコーヒーを作る",
+ "silentgems.configuration.rabbitCoffeeDelay": "ウサギのコーヒーの間隔"
+}

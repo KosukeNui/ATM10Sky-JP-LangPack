@@ -1,0 +1,12 @@
+{
+ "ars_ocultas.page.gem": "妖霊同調ジェム",
+ "ars_ocultas.page.spirit_jar": "妖霊の瓶",
+ "ars_ocultas.page.transmutation": "変換",
+ "ars_ocultas.page1.gem": "ダイヤモンドが足りないときの別のレシピです。",
+ "ars_ocultas.page1.spirit_jar": "Occultismの妖霊は、封じ込めの瓶の中でも働けます。元の動きはそのままで、消滅もしないので、自動化にぴったりです！妖霊の瓶は、周りの7x7の範囲にある、妖霊のフィルターに合うアイテムを自動で拾います（粉砕者の妖霊なら、処理できる鉱石を自動で拾います）。",
+ "ars_ocultas.page1.transmutation": "余った銀を金に、金を銀に変えられます！",
+ "ars_ocultas.page2.spirit_jar": "ホッパーやスターバンクルで、封じ込めの瓶にアイテムを入れることもできます（どのパイプでも使えるはずです！）。プレイヤーがアイテムを持って瓶を右クリックしても入れられます。瓶の中の妖霊は普段どおりに動くので、たとえば粉砕者の妖霊は自動で処理して、できたものをどこかの方向へ放り出します。",
+ "ars_ocultas.page3.spirit_jar": "瓶の中の清掃員の妖霊には特別な性質があります。近くのアイテムを自動で拾い、隣のインベントリへ入れようとします。これで自動化がとても簡単になります！",
+ "ars_ocultas.section.ars_ocultas": "Ars Ocultas",
+ "block.ars_ocultas.altar": "供物の祭壇"
+}

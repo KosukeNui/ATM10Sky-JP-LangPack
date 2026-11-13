@@ -1,0 +1,12 @@
+{
+ "ftbchunks.config.client": "クライアント設定",
+ "ftbchunks.config.server": "サーバー設定",
+ "ftbchunks.config.client.appearance.claim_mode": "チャンクの占有モード",
+ "ftbchunks.config.server.flowing_fluid_protection": "流れる液体の保護",
+ "ftbchunks.config.server.flowing_fluid_protection.tooltip": "trueの場合、違うチームが所有する占有の間を、液体が横に流れなくなります（流れ込む先の占有が「ブロックの編集」をパブリックにしている場合を除く）。\n初期設定はfalseです。液体の流れは頻繁に確認されるため、特に大量の流れる液体があると、有効にするとサーバーの動作が重くなる可能性があります\n「disable_protection」がtrueの場合、この設定は無視されます。",
+ "ftbchunks.config.server.fire_spread_protection": "延焼の保護",
+ "ftbchunks.config.server.fire_spread_protection.tooltip": "trueの場合、違うチームが所有する占有の間で、火が燃え広がらなくなります（燃え広がる先の占有が「ブロックの編集」をパブリックにしている場合を除く）。\n初期設定はfalseです。特にたくさんのブロックが燃えていると、有効にするとサーバーの動作が重くなる可能性があります\n「disable_protection」がtrueの場合、この設定は無視されます。",
+ "ftbchunks.claim_mode.freehand": "自由に占有",
+ "ftbchunks.claim_mode.rectangle": "長方形で占有",
+ "ftbchunks.claim_mode.circle": "円形で占有"
+}

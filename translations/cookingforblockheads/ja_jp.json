@@ -1,0 +1,7 @@
+{
+ "gui.cookingforblockheads.moved_to_cooking_pot": "調理鍋に移しました",
+ "gui.cookingforblockheads.cooking_pot_obstructed": "調理鍋がふさがっています",
+ "gui.cookingforblockheads.feedback_stacked": "%s x%d",
+ "tooltip.cookingforblockheads.missing_cooking_pot": "調理するのに調理鍋がありません",
+ "container.cookingforblockheads.cooking_table": "調理台"
+}

@@ -1,0 +1,14 @@
+# Actually Additions の独自用語（公式訳なし・既存訳なし〔ローカル全体と公式リポジトリで確認〕。2026-10-22 作成）
+# マニュアル本文（booklet.actuallyadditions.chapter.*、273キー）を訳すときもこれに合わせる
+
+- {en: "Crystal Flux", ja: "クリスタルフラックス", context: "エネルギー単位。略称 CF は英字のまま", status: approved}
+- {en: "Atomic Reconstructor", ja: "原子再構築機", context: "", status: approved}
+- {en: "Empowerer", ja: "エンパワラー", context: "クリスタルを強化する祭壇。Empowered ○○＝強化された○○", status: approved}
+- {en: "Display Stand", ja: "展示台", context: "", status: approved}
+- {en: "Restonia / Palis / Diamatine / Emeradic / Void / Enori", ja: "レストニア／パリス／ダイアマティン／エメラディック／ヴォイド／エノリ", context: "6色のクリスタルの名前（音訳）。○○ Crystal＝○○クリスタル。原石の Cluster・Shard は色名（赤色のクリスタルの塊 など）", status: approved}
+- {en: "Phantom ○○face", ja: "ファントム○○フェイス", context: "Phantom Itemface＝ファントムアイテムフェイス、Liquiface＝リキフェイス", status: approved}
+- {en: "Laser Relay", ja: "レーザーリレー", context: "Advanced＝高度な、Extreme＝究極の", status: approved}
+- {en: "Canola", ja: "キャノーラ", context: "Canola Oil＝キャノーラ油、Refined＝精製", status: approved}
+- {en: "AIOT", ja: "AIOT", context: "All-In-One Tool の略。英字のまま（○○のAIOT）", status: approved}
+- {en: "Augment", ja: "強化", context: "ドリルの強化パーツ（Drill Speed Augment I＝ドリルの速度強化I）", status: approved}
+- {en: "Black Quartz", ja: "ブラッククォーツ", context: "GeOre の Black Quartz と同じ訳", status: approved}

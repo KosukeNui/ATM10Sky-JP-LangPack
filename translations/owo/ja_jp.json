@@ -1,0 +1,18 @@
+{
+ "text.owo.configure_hot_reload.title": "ホットリロード設定",
+ "text.owo.configure_hot_reload.choose_file": "ファイルを選択",
+ "text.owo.configure_hot_reload.save": "保存",
+ "text.owo.configure_hot_reload.reload_from.unset": "未設定",
+ "text.owo.config.search": "検索...",
+ "text.owo.config.search.matches": "%d / %d",
+ "text.owo.config.search.no_matches": "一致なし",
+ "text.owo.config.must_restart": "変更を適用するには再起動が必要な項目があります",
+ "text.owo.config.button.exit_minecraft": "Minecraftを終了",
+ "text.owo.config.button.ignore_restart": "後で再起動",
+ "text.owo.config.button.range.edit_as_text": "テキストで編集",
+ "text.owo.config.button.range.edit_with_slider": "スライダーで編集",
+ "text.owo.config.button.reload": "再読み込み",
+ "text.owo.config.button.done": "完了",
+ "text.owo.config.sections_tooltip": "セクション",
+ "text.owo.config.list.add_entry": "エントリを追加"
+}

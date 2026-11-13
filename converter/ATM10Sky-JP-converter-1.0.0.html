@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATM10 Sky 変換ツール</title>
+<style>
+  :root { --bg:#f6f5f2; --fg:#1f1f1f; --muted:#666; --card:#fff; --line:#ddd; --accent:#b4561e; --ok:#2e7d32; --ng:#c62828; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1b1b; --fg:#eee; --muted:#aaa; --card:#262626; --line:#3a3a3a; --accent:#e39155; --ok:#81c784; --ng:#ef9a9a; } }
+  body { background:var(--bg); color:var(--fg); font-family:system-ui,"Yu Gothic UI","Meiryo",sans-serif; margin:0; padding:24px 16px; line-height:1.7; }
+  main { max-width:760px; margin:0 auto; }
+  h1 { font-size:1.4rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:14px 0; }
+  .card h2 { font-size:1.05rem; margin:0 0 8px; }
+  button, label.btn { display:inline-block; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 16px; font-size:1rem; cursor:pointer; }
+  button:disabled { opacity:.45; cursor:default; }
+  input[type=file] { display:none; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  td, th { border-bottom:1px solid var(--line); padding:6px 4px; text-align:left; vertical-align:top; word-break:break-all; }
+  .ok { color:var(--ok); font-weight:600; } .ng { color:var(--ng); font-weight:600; }
+  code { font-size:.9em; }
+  ol { padding-left:1.3em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ATM10 To the Sky 日本語化 変換ツール</h1>
+  <p class="sub">対応バージョン: パック <b>2.3.1</b>　／　このページはパソコンの中だけで動きます（ファイルはどこにも送信しません）</p>
+
+  <div class="card">
+    <h2>このツールがすること</h2>
+    <p>パックの中の次のファイルを読み、<b>画面に出る英語の文だけ</b>を「翻訳キー＋元の英語」の形に書き換えたファイルを作ります。元の英語はそのまま残るので、日本語化リソースパックを入れていない人や英語の設定の人には、今までと同じ英語が表示されます。それ以外（スクリプトの動き・設定値など）は一切変えません。</p>
+    <table id="targets"></table>
+  </div>
+
+  <div class="card">
+    <h2>1. パックのフォルダを選ぶ</h2>
+    <p>インスタンスのフォルダ（<code>kubejs</code> と <code>config</code> が入っているフォルダ）を選んでください。ブラウザが「アップロード」と表示することがありますが、送信はされません。</p>
+    <label class="btn" for="dir">フォルダを選ぶ</label>
+    <input id="dir" type="file" webkitdirectory directory multiple>
+    <p id="picked" class="sub"></p>
+  </div>
+
+  <div class="card">
+    <h2>2. 結果</h2>
+    <table id="result"><tr><td class="sub">まだ変換していません。</td></tr></table>
+    <p style="margin-top:12px"><button id="dl" disabled>変換したファイルを zip でダウンロード</button></p>
+  </div>
+
+  <div class="card">
+    <h2>3. 置き換える</h2>
+    <ol>
+      <li>念のため、元のファイルをバックアップしてください。</li>
+      <li>ダウンロードした zip を展開し、中の <code>kubejs</code> と <code>config</code> フォルダを、インスタンスのフォルダに上書きでコピーします。</li>
+      <li>展開しようとして「このファイルへのアクセスがブロックされています」と出たときは、zip を右クリック →「プロパティ」→ いちばん下の「許可する」にチェック → OK のあと、もう一度展開してください。または、結果の欄の「このファイルだけをダウンロード」でファイルを1つずつ保存し、表に書いてある場所（例: <code>config/skyblockbuilder/</code>）へ上書きでコピーしてください。</li>
+      <li>マルチプレイでは、<b>サーバー</b>にも同じファイルを置いてください（<code>config/skyblockbuilder</code> と <code>kubejs/data</code>・<code>kubejs/server_scripts</code> はサーバーが読みます。<code>kubejs/client_scripts</code> は各プレイヤーのクライアントが読みます）。</li>
+      <li>パックを更新したときは、更新後のファイルでこのツールをもう一度使ってください。</li>
+    </ol>
+  </div>
+</main>
+<script>// ATM10 To the Sky 日本語化 変換ツールの本体（ブラウザとNode.jsの両方で動く）
+// 元ファイルの「表示する文字列」だけを、翻訳キーつきの形に置き換える。
+// 元の英語は fallback（翻訳がないときに出す文字）としてそのまま残すので、英語環境では元と同じ表示になる。
+(function (root) {
+  'use strict';
+
+  function countOccurrences(text, find, from, to) {
+    let n = 0;
+    let i = text.indexOf(find, from);
+    while (i !== -1 && i + find.length <= to) {
+      n++;
+      i = text.indexOf(find, i + find.length);
+    }
+    return n;
+  }
+
+  // anchor があるときは anchor から until（なければファイルの最後）までを範囲にする
+  function regionFor(text, anchor, until) {
+    if (anchor === null || anchor === undefined) return [0, text.length];
+    const start = text.indexOf(anchor);
+    if (start === -1) return null;
+    if (text.indexOf(anchor, start + anchor.length) !== -1) return null; // anchor は1回だけのはず
+    let end = until ? text.indexOf(until, start + anchor.length) : -1;
+    if (end === -1) end = text.length;
+    return [start, end];
+  }
+
+  function replaceInRegion(text, find, replace, from, to) {
+    const head = text.slice(0, from);
+    const mid = text.slice(from, to).split(find).join(replace);
+    return head + mid + text.slice(to);
+  }
+
+  // 規則の改行（find・replace の中）を、ファイルの改行の形式（CRLF か LF）に合わせる。
+  // パックの版によって同じファイルの改行の形式が違う（templates.json5 は v2.1.0 が LF、v2.3.1 が CRLF）ため。
+  function adaptEol(text, rules) {
+    const eol = text.indexOf('\r\n') !== -1 ? '\r\n' : '\n';
+    return rules.map(function (r) {
+      const c = Object.assign({}, r);
+      c.find = r.find.replace(/\r?\n/g, eol);
+      c.replace = r.replace.replace(/\r?\n/g, eol);
+      return c;
+    });
+  }
+
+  // 1ファイル分を変換する。戻り値: {text, applied, failed: [{rule, reason}], alreadyConverted}
+  function convertFile(text, rules) {
+    const result = { text: text, applied: 0, failed: [], alreadyConverted: false };
+    if (text.indexOf('atm10sky_jp.') !== -1) {
+      result.alreadyConverted = true;
+      return result;
+    }
+    rules = adaptEol(text, rules);
+    for (const rule of rules) {
+      const region = regionFor(result.text, rule.anchor, rule.until);
+      if (region === null) {
+        result.failed.push({ rule: rule, reason: 'anchor not found' });
+        continue;
+      }
+      const n = countOccurrences(result.text, rule.find, region[0], region[1]);
+      if (n !== rule.expect) {
+        result.failed.push({ rule: rule, reason: 'expected ' + rule.expect + ', found ' + n });
+        continue;
+      }
+      result.text = replaceInRegion(result.text, rule.find, rule.replace, region[0], region[1]);
+      result.applied++;
+    }
+    return result;
+  }
+
+  // 変換結果を逆に戻して、元と完全に一致するか調べる（表示文字列以外を変えていないことの確認）
+  function verifyReversible(original, converted, rules) {
+    let back = converted;
+    for (const rule of adaptEol(original, rules).reverse()) {
+      back = back.split(rule.replace).join(rule.find);
+    }
+    return back === original;
+  }
+
+  // 規則をファイルごとに分ける
+  function groupByFile(rules) {
+    const m = {};
+    for (const r of rules) (m[r.file] = m[r.file] || []).push(r);
+    return m;
+  }
+
+  const api = { convertFile: convertFile, verifyReversible: verifyReversible, groupByFile: groupByFile };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.ATMSkyConvert = api;
+})(this);
+</script>
+<script>
+const RULES = {"pack_version": "2.3.1", "rules": [{"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"simple_life\",\r\n      \"file\": \"simple_life.nbt\",", "replace": "\"name\": \"simple_life\",\r\n      \"desc\": \"{atm10sky_jp.template.simple_life.desc}\",\r\n      \"file\": \"simple_life.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"witch_cottage\",\r\n      \"file\": \"witch_cottage.nbt\",", "replace": "\"name\": \"witch_cottage\",\r\n      \"desc\": \"{atm10sky_jp.template.witch_cottage.desc}\",\r\n      \"file\": \"witch_cottage.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"default\",\r\n      \"file\": \"default.nbt\",", "replace": "\"name\": \"default\",\r\n      \"desc\": \"{atm10sky_jp.template.default.desc}\",\r\n      \"file\": \"default.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"sanguine sanctuary\",\r\n      \"file\": \"sanguine sanctuary.nbt\",", "replace": "\"name\": \"sanguine sanctuary\",\r\n      \"desc\": \"{atm10sky_jp.template.sanguine_sanctuary.desc}\",\r\n      \"file\": \"sanguine sanctuary.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"steve's staycation\",\r\n      \"file\": \"steve's staycation.nbt\",", "replace": "\"name\": \"steve's staycation\",\r\n      \"desc\": \"{atm10sky_jp.template.steves_staycation.desc}\",\r\n      \"file\": \"steve's staycation.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"piggy\",\r\n      \"file\": \"piggy.nbt\",", "replace": "\"name\": \"piggy\",\r\n      \"desc\": \"{atm10sky_jp.template.piggy.desc}\",\r\n      \"file\": \"piggy.nbt\",", "expect": 1}, {"file": "config/skyblockbuilder/templates.json5", "anchor": "\"templateList\"", "until": null, "find": "\"name\": \"skyfactory\",\r\n      \"file\": \"skyfactory.nbt\",", "replace": "\"name\": \"skyfactory\",\r\n      \"desc\": \"{atm10sky_jp.template.skyfactory.desc}\",\r\n      \"file\": \"skyfactory.nbt\",", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"Mining Dimension Disabled\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.teleport_pad.1\", \"Mining Dimension Disabled\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Fake Search Aliases:\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.scryers_linkage.1\", \"§7Fake Search Aliases:\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§c§lShift-Right-Click§r§c the §c§lSmithing Table§r§c with §lMundabitur Dust\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.hephaestus_forge_tier.1\", \"§c§lShift-Right-Click§r§c the §c§lSmithing Table§r§c with §lMundabitur Dust\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§c█ = Gilded Chiseled Polished Darkstone with Smithing Table on top\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.hephaestus_forge_tier.2\", \"§c█ = Gilded Chiseled Polished Darkstone with Smithing Table on top\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7█ = Polished Darkstone\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.hephaestus_forge_tier.3\", \"§7█ = Polished Darkstone\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§5█§7 = Gilded Chiseled Polished Darkstone\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.hephaestus_forge_tier.4\", \"§5█§7 = Gilded Chiseled Polished Darkstone\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§6█§7 = Chiseled Arcane Polished Darkstone\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.hephaestus_forge_tier.5\", \"§6█§7 = Chiseled Arcane Polished Darkstone\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§c§lShift-Right-Click§r§c the §c§lClibano Core§r§c with §c§lMundabitur Dust\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.clibano_core.1\", \"§c§lShift-Right-Click§r§c the §c§lClibano Core§r§c with §c§lMundabitur Dust\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§5█§7 = Polished Darkstone\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.clibano_core.2\", \"§5█§7 = Polished Darkstone\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7█ = Polished Darkstone Bricks\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.clibano_core.3\", \"§7█ = Polished Darkstone Bricks\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§6█§7 = Clibano Core\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.clibano_core.4\", \"§6█§7 = Clibano Core\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Right to Left -> Bottom to Top\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.clibano_core.5\", \"§7Right to Left -> Bottom to Top\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§4Obtainable from the Wandering Trader\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.growing_edelwood.1\", \"§4Obtainable from the Wandering Trader\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§4Or by using a Corrupt Soul on an Oak Sapling\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.growing_edelwood.2\", \"§4Or by using a Corrupt Soul on an Oak Sapling\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Use Ferrognetic Mixture on the Darkstone Pedesta\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.magnetized_darkstone_pedestal.1\", \"§7Use Ferrognetic Mixture on the Darkstone Pedesta\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Use a Soul Extractor on Soul Sand\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.soul.1\", \"§7Use a Soul Extractor on Soul Sand\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Use a Splash Aureal Bottle on a normal soul\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.enchanted_soul.1\", \"§7Use a Splash Aureal Bottle on a normal soul\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Rarely spawns when killing mobs\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.corrupt_soul.1\", \"§7Rarely spawns when killing mobs\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Hold a test tube in your off-hand and then kill mobs\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.blood_test_tube.1\", \"§7Hold a test tube in your off-hand and then kill mobs\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Only obtainable via the Black Hole\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.xpetrified_orb.1\", \"§7Only obtainable via the Black Hole\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7To make a Black Hole throw Dark Matter together with Corrupti Dust on the ground\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.xpetrified_orb.2\", \"§7To make a Black Hole throw Dark Matter together with Corrupti Dust on the ground\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Feed it enough xp to make it spit out an Xpetrified Orb\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.xpetrified_orb.3\", \"§7Feed it enough xp to make it spit out an Xpetrified Orb\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Dropped by the Ender Dragon\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.dragon_scale.1\", \"§7Dropped by the Ender Dragon\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§cUnobtainable\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.crescent_moon.1\", \"§cUnobtainable\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§cWill turn into a Crimson Stone after 1 use\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.soul_crimson_stone.1\", \"§cWill turn into a Crimson Stone after 1 use\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§cDisabled for Fake Player\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.watering_can.1\", \"§cDisabled for Fake Player\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§c(Blocks like Modular Routers, Clickers, etc)\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.watering_can.2\", \"§c(Blocks like Modular Routers, Clickers, etc)\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Tier: Foliot\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.ritual_dummy_honeycomb.1\", \"§7Tier: Foliot\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§7Tier: Wild\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.ritual_dummy_misc_demonic_sapling.1\", \"§7Tier: Wild\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"Make a Lava Source Block flow on top of Create Honey\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.limestone.1\", \"Make a Lava Source Block flow on top of Create Honey\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"Make a Lava Source Block flow on top of Create Chocolate\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.scoria.1\", \"Make a Lava Source Block flow on top of Create Chocolate\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§9In a Botany Pot: Requires a hoe enchanted with Silk Touch to be harvested\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.sculk.1\", \"§9In a Botany Pot: Requires a hoe enchanted with Silk Touch to be harvested\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§cWARNING: Will implode at wave 3 in a Compact Machine or AE2 Spatial Storage\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.gate_pearl.1\", \"§cWARNING: Will implode at wave 3 in a Compact Machine or AE2 Spatial Storage\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"Any angel ring can have its appearance change in the crafting table.\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.angel_ring.1\", \"Any angel ring can have its appearance change in the crafting table.\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"§cNOTICE: Must be fully charged before use.\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.sun_crystal.1\", \"§cNOTICE: Must be fully charged before use.\")", "expect": 1}, {"file": "kubejs/client_scripts/tooltips.js", "anchor": null, "until": null, "find": "Text.of(\"Drop on the ground to charge. Needs to be day time and direct access to the sky.\")", "replace": "Text.translateWithFallback(\"atm10sky_jp.tooltip.sun_crystal.2\", \"Drop on the ground to charge. Needs to be day time and direct access to the sky.\")", "expect": 1}, {"file": "kubejs/client_scripts/recipe_viewer/add_info.js", "anchor": null, "until": null, "find": "\"In the Reaction Chamber: §e4000mb of Water§f + §e1x Quantum Infused Dust§f = §b1000mb of Quantum Infusion\"", "replace": "Text.translateWithFallback(\"atm10sky_jp.info.quantum_infusion_source\", \"In the Reaction Chamber: §e4000mb of Water§f + §e1x Quantum Infused Dust§f = §b1000mb of Quantum Infusion\")", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/advanced_aquatic.json", "anchor": null, "until": null, "find": "\"text\": \"Advanced Aquatic\"", "replace": "\"translate\": \"atm10sky_jp.trait.advanced_aquatic.name\", \"fallback\": \"Advanced Aquatic\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/advanced_aquatic.json", "anchor": null, "until": null, "find": "\"text\": \"Advanced Aquatic gives waterbreathing without a full set\"", "replace": "\"translate\": \"atm10sky_jp.trait.advanced_aquatic.desc\", \"fallback\": \"Advanced Aquatic gives waterbreathing without a full set\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/advanced_flame_ward.json", "anchor": null, "until": null, "find": "\"text\": \"Advanced Flame Ward\"", "replace": "\"translate\": \"atm10sky_jp.trait.advanced_flame_ward.name\", \"fallback\": \"Advanced Flame Ward\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/advanced_flame_ward.json", "anchor": null, "until": null, "find": "\"text\": \"Gives fire resistance without a full set\"", "replace": "\"translate\": \"atm10sky_jp.trait.advanced_flame_ward.desc\", \"fallback\": \"Gives fire resistance without a full set\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/cure_levitation.json", "anchor": null, "until": null, "find": "\"text\": \"Cure Levitation\"", "replace": "\"translate\": \"atm10sky_jp.trait.cure_levitation.name\", \"fallback\": \"Cure Levitation\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/cure_levitation.json", "anchor": null, "until": null, "find": "\"text\": \"Removes levitation effect when equipped\"", "replace": "\"translate\": \"atm10sky_jp.trait.cure_levitation.desc\", \"fallback\": \"Removes levitation effect when equipped\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/cure_nausea.json", "anchor": null, "until": null, "find": "\"text\": \"Cure Nausea\"", "replace": "\"translate\": \"atm10sky_jp.trait.cure_nausea.name\", \"fallback\": \"Cure Nausea\"", "expect": 1}, {"file": "kubejs/data/silentgear/silentgear_traits/cure_nausea.json", "anchor": null, "until": null, "find": "\"text\": \"Removes nausea effect when equipped\"", "replace": "\"translate\": \"atm10sky_jp.trait.cure_nausea.desc\", \"fallback\": \"Removes nausea effect when equipped\"", "expect": 1}]};
+const byFile = ATMSkyConvert.groupByFile(RULES.rules);
+const targets = Object.keys(byFile);
+const tTable = document.getElementById('targets');
+tTable.innerHTML = '<tr><th>ファイル</th><th>置き換える箇所</th></tr>' +
+  targets.map(f => `<tr><td><code>${f}</code></td><td>${byFile[f].reduce((a, r) => a + r.expect, 0)}</td></tr>`).join('');
+
+let outputs = [];
+document.getElementById('dir').addEventListener('change', async (ev) => {
+  const files = Array.from(ev.target.files);
+  const found = {};
+  for (const f of files) {
+    const rel = f.webkitRelativePath.replace(/\\/g, '/');
+    for (const t of targets) if (rel.endsWith('/' + t)) found[t] = f;
+  }
+  document.getElementById('picked').textContent = files.length ? `選んだフォルダ: ${files[0].webkitRelativePath.split('/')[0]}` : '';
+  outputs = [];
+  const rows = ['<tr><th>ファイル</th><th>結果</th></tr>'];
+  for (const t of targets) {
+    if (!found[t]) { rows.push(`<tr><td><code>${t}</code></td><td class="ng">見つかりません</td></tr>`); continue; }
+    const text = await found[t].text();
+    const r = ATMSkyConvert.convertFile(text, byFile[t]);
+    if (r.alreadyConverted) { rows.push(`<tr><td><code>${t}</code></td><td class="ng">すでに変換済みです（元のファイルで実行してください）</td></tr>`); continue; }
+    const reversible = ATMSkyConvert.verifyReversible(text, r.text, byFile[t]);
+    const total = byFile[t].length;
+    let msg = `<span class="${r.failed.length ? 'ng' : 'ok'}">${r.applied} / ${total} 箇所を変換</span>`;
+    if (!reversible) msg += '<br><span class="ng">検証に失敗したため、このファイルは出力しません</span>';
+    if (r.failed.length) msg += `<br><span class="ng">${r.failed.length} 箇所はパックの更新で文が変わっていたため、英語のまま残しました。</span>`;
+    if (reversible && r.applied > 0) {
+      outputs.push({ name: t, data: new TextEncoder().encode(r.text) });
+      msg += `<br><button class="one" data-i="${outputs.length - 1}">このファイルだけをダウンロード（${t.split('/').pop()}）</button>`;
+    }
+    rows.push(`<tr><td><code>${t}</code></td><td>${msg}</td></tr>`);
+  }
+  document.getElementById('result').innerHTML = rows.join('');
+  document.getElementById('dl').disabled = outputs.length === 0;
+});
+
+// 1ファイルずつのダウンロード（zip の展開が Windows にブロックされるとき用）
+document.getElementById('result').addEventListener('click', (ev) => {
+  const b = ev.target.closest('button.one');
+  if (!b) return;
+  const o = outputs[Number(b.dataset.i)];
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([o.data], { type: 'application/octet-stream' }));
+  a.download = o.name.split('/').pop();
+  a.click();
+});
+
+// --- 最小限の zip 作成（無圧縮・UTF-8 ファイル名・区切りは "/"） ---
+const CRC_TABLE = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TABLE[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function makeZip(entries) {
+  const enc = new TextEncoder(); const chunks = []; const central = []; let offset = 0;
+  for (const e of entries) {
+    const name = enc.encode(e.name.replace(/\\/g, '/')); const crc = crc32(e.data); const size = e.data.length;
+    const h = new DataView(new ArrayBuffer(30));
+    h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, 0, true);
+    h.setUint32(14, crc, true); h.setUint32(18, size, true); h.setUint32(22, size, true); h.setUint16(26, name.length, true);
+    chunks.push(new Uint8Array(h.buffer), name, e.data);
+    const c = new DataView(new ArrayBuffer(46));
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true);
+    c.setUint32(16, crc, true); c.setUint32(20, size, true); c.setUint32(24, size, true); c.setUint16(28, name.length, true); c.setUint32(42, offset, true);
+    central.push(new Uint8Array(c.buffer), name);
+    offset += 30 + name.length + size;
+  }
+  const cSize = central.reduce((a, b) => a + b.length, 0);
+  const end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, entries.length, true); end.setUint16(10, entries.length, true);
+  end.setUint32(12, cSize, true); end.setUint32(16, offset, true);
+  return new Blob([...chunks, ...central, new Uint8Array(end.buffer)], { type: 'application/zip' });
+}
+document.getElementById('dl').addEventListener('click', () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(makeZip(outputs));
+  a.download = `ATM10Sky-JP-converted-${RULES.pack_version}.zip`;
+  a.click();
+});
+</script>
+</body>
+</html>

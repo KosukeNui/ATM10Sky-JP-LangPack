@@ -1,0 +1,10 @@
+{
+ "warning.32bit": "64bitシステムで32bit版Javaを使用しています。64bit版Javaをインストールしてください。",
+ "warning.toomuch": "このパックのおすすめより多いメモリ（%s MB）が割り当てられています。最大は%s MBです。あなたのシステムでのおすすめは%s MBです。\n",
+ "warning.toolow": "このパックのおすすめより少ないメモリ（%s MB）が割り当てられています。最小は%s MBです。あなたのシステムでのおすすめは%s MBです。\n",
+ "warning.overrecommended": "あなたのシステムのおすすめより多いメモリ（%s MB）が割り当てられています。おすすめは%s MBです。\n",
+ "warning.underrecommended": "あなたのシステムのおすすめより少ないメモリ（%s MB）が割り当てられています。おすすめは%s MBです。\n",
+ "warning.recommendedbelowmin": " あなたのシステムでのおすすめの%sは、このパックに必要な最小の%s MBより少なくなっています。頻繁にカクつくなどの問題が起きるかもしれません。\n",
+ "button.howto": "ガイドを開く",
+ "button.stopremind": "今後表示しない"
+}

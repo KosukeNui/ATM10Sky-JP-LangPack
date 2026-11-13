@@ -1,0 +1,8 @@
+{
+ "kleeslabs.configuration.mode": "モード",
+ "kleeslabs.configuration.mode.tooltip": "KleeSlabsを動かすタイミングを、ALWAYS（常に）、ONLY_WHEN_SNEAKING（スニーク中だけ）、ONLY_WHEN_NOT_SNEAKING（スニークしていないときだけ）から選びます",
+ "kleeslabs.configuration.disabledCompat": "無効にする連携",
+ "kleeslabs.configuration.disabledCompat.tooltip": "連携を無効にするMODのID。",
+ "kleeslabs.configuration.dumpSlabs": "デバッグ: ハーフブロックを書き出す",
+ "kleeslabs.configuration.dumpSlabs.tooltip": "開発用です。trueにすると、ワールドを読み込んだときに、名前に「slab」を含むアイテムの一覧を書き出します。"
+}

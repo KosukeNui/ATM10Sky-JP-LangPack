@@ -1,0 +1,14 @@
+{
+ "item.mob_bottle.tooltip": "中身: %s",
+ "item.mob_bottle.tooltip_empty": "縮んだエンティティをガラス瓶で右クリックすると捕まえられます",
+ "item.mob_bottle.tooltip_with_name": "中身: %s（%s）",
+ "item.shrink.shrink_bottle": "ガラス瓶",
+ "item.shrink.shrinking_device": "個人用縮小装置",
+ "itemGroup.shrink": "Shrink",
+ "key.shrink.category": "Shrink",
+ "key.shrink.shrink": "縮小の切り替え",
+ "shrink.deny_shrink": "禁止タグがあるため、エンティティを縮小できませんでした",
+ "shrink.message.already_shrunk": "縮んでいるあいだは開けません",
+ "shrink.message.missing": "縮小の属性がありません",
+ "shrink.message.power": "電力が足りません"
+}

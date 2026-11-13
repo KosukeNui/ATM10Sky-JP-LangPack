@@ -1,0 +1,7 @@
+{
+ "block.modularbees.me_centrifuge_import": "ME遠心分離機搬入ハッチ",
+ "modularbees.gui.me_import.config": "設定",
+ "modularbees.gui.me_import.storage": "ストレージ",
+ "config.jade.plugin_modularbees.grid_node_state": "AE2のネットワークの状態（ModularBees）",
+ "config.jade.plugin_modularbees.power_storage": "AE2の電力の状態（ModularBees）"
+}

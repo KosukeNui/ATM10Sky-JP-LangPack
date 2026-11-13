@@ -1,0 +1,31 @@
+# Forbidden & Arcanus の固有名詞（公式訳なし・既存訳なし。2026-10-20 作成）
+# 方針: 素材・木材などの造語名はカタカナの音訳、意味のある語は意訳。ラテン語由来の名前は読みをカタカナにする
+
+- {en: "Darkstone", ja: "ダークストーン", context: "石材。Polished Darkstone＝磨かれたダークストーン（バニラ Polished ○○＝磨かれた○○）", status: approved}
+- {en: "Arcane", ja: "アーケイン", context: "Arcane Crystal＝アーケインクリスタル、Arcane Polished Darkstone＝アーケインの磨かれたダークストーン", status: approved}
+- {en: "Gilded", ja: "金で飾られた", context: "Gilded Chiseled Polished Darkstone＝金で飾られた模様入りの磨かれたダークストーン", status: approved}
+- {en: "Edelwood", ja: "エーデルウッド", context: "木材", status: approved}
+- {en: "Aurum", ja: "オーラム", context: "木材（ラテン語で金）", status: approved}
+- {en: "Deorum", ja: "デオラム", context: "金属", status: approved}
+- {en: "Fungyss", ja: "ファンギス", context: "キノコ系の木材", status: approved}
+- {en: "Stellarite", ja: "ステラライト", context: "素材", status: approved}
+- {en: "Obsidiansteel", ja: "黒曜鋼", context: "黒曜石＋鋼の合成語なので意訳", status: approved}
+- {en: "Soulless Sand", ja: "魂なき砂", context: "ソウルサンドの対", status: approved}
+- {en: "Hephaestus Forge", ja: "ヘパイストスの炉", context: "儀式の中心となる多重ブロック。ギリシャ神話の鍛冶の神", status: approved}
+- {en: "Clibano", ja: "クリバノ", context: "炉（多重ブロック）の名前", status: approved}
+- {en: "Mundabitur Dust", ja: "ムンダビトゥールの粉", context: "炉の起動に使う粉（ラテン語）", status: approved}
+- {en: "Corrupti Dust", ja: "コルプティの粉", context: "", status: approved}
+- {en: "Aureal", ja: "オーリアル", context: "エッセンスの名前（魔力のようなもの）", status: approved}
+- {en: "Utrem Jar", ja: "ウトレムの瓶", context: "", status: approved}
+- {en: "Quantum Catcher", ja: "量子キャッチャー", context: "", status: approved}
+- {en: "Blacksmith Gavel", ja: "鍛冶屋の小槌", context: "", status: approved}
+- {en: "Draco Arcanus", ja: "ドラコ・アルカヌス", context: "装備一式の名前（ラテン語）", status: approved}
+- {en: "Mortem", ja: "モルテム", context: "防具一式（ラテン語で死）", status: approved}
+- {en: "Tyr", ja: "テュール", context: "防具一式（北欧神話の神）", status: approved}
+- {en: "Elementarium", ja: "エレメンタリウム", context: "", status: approved}
+- {en: "Xpetrified Orb", ja: "経験値の化石オーブ", context: "XP＋petrified（石化した）のしゃれ。意味を出して意訳", status: approved}
+- {en: "Lost Soul", ja: "迷える魂", context: "", status: approved}
+- {en: "Relic", ja: "遺物", context: "Artisan Relic＝職人の遺物、Enhancer Relic＝強化の遺物", status: approved}
+- {en: "Pact", ja: "契約", context: "Divine Pact＝神聖な契約、Maledictus Pact＝呪われた契約（Maledictus＝呪われた）", status: approved}
+- {en: "Ferrognetic Mixture", ja: "強磁性の混合物", context: "ferro＋magnetic のしゃれ。意味を出して意訳", status: approved}
+- {en: "Yellow Orchid", ja: "黄色のラン", context: "MOD独自の花。実在種名か未確認のため直訳", status: approved}

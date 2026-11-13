@@ -1,0 +1,15 @@
+{
+ "container.utilityvest.tool_vest": "ツールベスト",
+ "input.utilityvest.wheel.down": "下にスクロール",
+ "input.utilityvest.wheel.up": "上にスクロール",
+ "itemGroup.utilityvest": "Utility Vest",
+ "key.utilityvest.radial": "円形メニューを開く",
+ "tooltip.utilityvest.menu.cycle": "%sと%sでホットバーを切り替え",
+ "tooltip.utilityvest.menu.insert": "%sで%sをベストのインベントリに入れる",
+ "tooltip.utilityvest.menu.swap": "%sで%sと入れ替え",
+ "tooltip.utilityvest.vest.radial": "%s＋数字キーを押し続けると、すばやく選ぶメニューを開く",
+ "utilityvest.configuration.invert_radial_scroll": "円形メニューのスクロールを逆にする",
+ "utilityvest.configuration.radial_stack_count": "円形メニューのスタック数",
+ "utilityvest.configuration.radial_tooltip": "円形メニューのツールチップ",
+ "utilityvest.configuration.remember_radial_row": "円形メニューの列を記憶"
+}

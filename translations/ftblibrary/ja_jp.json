@@ -1,0 +1,6 @@
+{
+ "ftblibrary.select_entity.all_entities": "すべての生物",
+ "ftblibrary.read_only": "読み取り専用",
+ "ftblibrary.client_settings.tooltips.entity_modname": "エンティティの顔の選択GUIにMod名を表示する",
+ "ftblibrary.server_settings": "サーバー設定"
+}

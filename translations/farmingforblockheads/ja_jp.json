@@ -1,0 +1,10 @@
+{
+ "farmingforblockheads.configuration.enabledOptionalPresets": "有効にする追加のプリセット",
+ "farmingforblockheads.configuration.enabledOptionalPresets.tooltip": "有効にする追加のプリセットの一覧。",
+ "farmingforblockheads.configuration.disabledDefaultPresets": "無効にする標準のプリセット",
+ "farmingforblockheads.configuration.disabledDefaultPresets.tooltip": "無効にする標準のプリセットの一覧。",
+ "farmingforblockheads.configuration.excludedGroups": "除外するグループ",
+ "farmingforblockheads.configuration.excludedGroups.tooltip": "無効にするグループの一覧。includedGroupsより優先されます。たとえば「selling.seeds」にすると、市場からすべての種がなくなります。",
+ "farmingforblockheads.configuration.includedGroups": "含めるグループ",
+ "farmingforblockheads.configuration.includedGroups.tooltip": "有効にするグループの一覧。「default」は組み込みの標準（selling.seeds、selling.saplings、selling.fertilizers.minecraft）の別名です。"
+}

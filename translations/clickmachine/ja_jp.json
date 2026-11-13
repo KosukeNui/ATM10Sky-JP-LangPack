@@ -1,0 +1,11 @@
+{
+ "gui.clickmachine.autoclick": "クリックマシン",
+ "block.clickmachine.click_machine": "クリックマシン",
+ "gui.clickmachine.speed": "%sクリック/秒",
+ "gui.clickmachine.speed_slow": "1クリック/%s秒",
+ "gui.clickmachine.sneaking": "スニーク中",
+ "gui.clickmachine.right_click": "右クリック中",
+ "gui.clickmachine.power": "FE: %s/%s",
+ "gui.clickmachine.power.usage": "%s FE/tを使用中",
+ "gui.clickmachine.rainbow_magic": "虹の魔法で動いています！"
+}

@@ -1,0 +1,1238 @@
+# 共通用語集（ATM10 To the Sky v2.1.0）
+# approved: 公式訳（ja_jp.json からキー参照で取り出したもの。source に出典キー）
+# pending : 公式訳がないもの。訳語案（実機確認①で確認）
+# translate: false: 英語のまま残すもの（理由を context に書く）
+
+- en: "Allthemodium Ingot"
+  ja: "Allthemodiumインゴット"
+  translate: true
+  context: "公式訳は英字のまま。クエスト本文でも「Allthemodium」と英字で書く（2026-10-20 決定）。原文の表記「AllTheModium」も同じ扱い"
+  source: "allthemodium:item.allthemodium.allthemodium_ingot (en: Allthemodium Ingot)"
+  status: approved
+
+- en: "Allthemodium Nugget"
+  ja: "Allthemodium塊"
+  translate: true
+  context: ""
+  source: "allthemodium:item.allthemodium.allthemodium_nugget (en: Allthemodium Nugget)"
+  status: approved
+
+- en: "Vibranium Ingot"
+  ja: "ヴィブラニウムインゴット"
+  translate: true
+  context: "Vibranium＝ヴィブラニウム"
+  source: "allthemodium:item.allthemodium.vibranium_ingot (en: Vibranium Ingot)"
+  status: approved
+
+- en: "Unobtainium Ingot"
+  ja: "アンオブタニウムインゴット"
+  translate: true
+  context: "Unobtainium＝アンオブタニウム"
+  source: "allthemodium:item.allthemodium.unobtainium_ingot (en: Unobtainium Ingot)"
+  status: approved
+
+- en: "Soul Lava"
+  ja: "魂の溶岩"
+  translate: true
+  context: ""
+  source: "allthemodium:fluid.allthemodium.soul_lava (en: Soul Lava)"
+  status: approved
+
+- en: "Ancient Stone"
+  ja: "古代の石"
+  translate: true
+  context: ""
+  source: "allthemodium:block.allthemodium.ancient_stone (en: Ancient Stone)"
+  status: approved
+
+- en: "Allthemodium Spell Book"
+  ja: "Allthemodiumのスペルブック"
+  translate: true
+  context: "スペルブックの型"
+  source: "allthearcanistgear:item.allthearcanistgear.allthemodium_spell_book (en: Allthemodium Spell Book)"
+  status: approved
+
+- en: "ATM Star"
+  ja: "ATMスター"
+  translate: true
+  context: ""
+  source: "allthetweaks:item.allthetweaks.atm_star (en: ATM Star)"
+  status: approved
+
+- en: "Sieve"
+  ja: "ふるい"
+  translate: true
+  context: ""
+  source: "exdeorum:emi.category.exdeorum.sieve (en: Sieve)"
+  status: approved
+
+- en: "Oak Sieve"
+  ja: "オークのふるい"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.oak_sieve (en: Oak Sieve)"
+  status: approved
+
+- en: "String Mesh"
+  ja: "糸のメッシュ"
+  translate: true
+  context: "Mesh＝メッシュ"
+  source: "exdeorum:item.exdeorum.string_mesh (en: String Mesh)"
+  status: approved
+
+- en: "Flint Mesh"
+  ja: "火打石のメッシュ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.flint_mesh (en: Flint Mesh)"
+  status: approved
+
+- en: "Iron Mesh"
+  ja: "鉄のメッシュ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.iron_mesh (en: Iron Mesh)"
+  status: approved
+
+- en: "Diamond Mesh"
+  ja: "ダイヤモンドのメッシュ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.diamond_mesh (en: Diamond Mesh)"
+  status: approved
+
+- en: "Netherite Mesh"
+  ja: "ネザライトのメッシュ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.netherite_mesh (en: Netherite Mesh)"
+  status: approved
+
+- en: "Stone Hammer"
+  ja: "石のハンマー"
+  translate: true
+  context: "Hammer＝ハンマー"
+  source: "exdeorum:item.exdeorum.stone_hammer (en: Stone Hammer)"
+  status: approved
+
+- en: "Compressed Stone Hammer"
+  ja: "石の圧縮ハンマー"
+  translate: true
+  context: "Compressed Hammer＝圧縮ハンマー"
+  source: "exdeorum:item.exdeorum.compressed_stone_hammer (en: Compressed Stone Hammer)"
+  status: approved
+
+- en: "Crook"
+  ja: "クロック"
+  translate: true
+  context: "公式訳は「クロック」"
+  source: "exdeorum:item.exdeorum.crook (en: Crook)"
+  status: approved
+
+- en: "Barrel"
+  ja: "バレル"
+  translate: true
+  context: "Ex Deorum のバレル（バニラの「樽」とは別物として「バレル」）"
+  source: "exdeorum:config.jade.plugin_exdeorum.barrel (en: Barrel)"
+  status: approved
+
+- en: "Oak Barrel"
+  ja: "オークのバレル"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.oak_barrel (en: Oak Barrel)"
+  status: approved
+
+- en: "Stone Barrel"
+  ja: "石のバレル"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.stone_barrel (en: Stone Barrel)"
+  status: approved
+
+- en: "Crucible"
+  ja: "るつぼ"
+  translate: true
+  context: ""
+  source: "exdeorum:config.jade.plugin_exdeorum.crucible (en: Crucible)"
+  status: approved
+
+- en: "Porcelain Crucible"
+  ja: "陶器のるつぼ"
+  translate: true
+  context: "Porcelain＝陶器"
+  source: "exdeorum:block.exdeorum.porcelain_crucible (en: Porcelain Crucible)"
+  status: approved
+
+- en: "Oak Crucible"
+  ja: "オークのるつぼ"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.oak_crucible (en: Oak Crucible)"
+  status: approved
+
+- en: "Porcelain Bucket"
+  ja: "陶器のバケツ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.porcelain_bucket (en: Porcelain Bucket)"
+  status: approved
+
+- en: "Porcelain Clay Ball"
+  ja: "陶器粘土玉"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.porcelain_clay_ball (en: Porcelain Clay Ball)"
+  status: approved
+
+- en: "Witch Water"
+  ja: "ウィッチウォーター"
+  translate: true
+  context: ""
+  source: "exdeorum:fluid_type.exdeorum.witch_water (en: Witch Water)"
+  status: approved
+
+- en: "Silkworm"
+  ja: "カイコ"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.silkworm (en: Silkworm)"
+  status: approved
+
+- en: "Grass Seeds"
+  ja: "草の種"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.grass_seeds (en: Grass Seeds)"
+  status: approved
+
+- en: "Mycelium Spores"
+  ja: "菌糸の胞子"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.mycelium_spores (en: Mycelium Spores)"
+  status: approved
+
+- en: "Stone Pebble"
+  ja: "石の小石"
+  translate: true
+  context: "Pebbles＝小石"
+  source: "exdeorum:item.exdeorum.stone_pebble (en: Stone Pebble)"
+  status: approved
+
+- en: "Iron Ore Chunk"
+  ja: "鉄鉱石の塊"
+  translate: true
+  context: "Ore Chunks＝鉱石の塊"
+  source: "exdeorum:item.exdeorum.iron_ore_chunk (en: Iron Ore Chunk)"
+  status: approved
+
+- en: "Dust"
+  ja: "ダスト"
+  translate: true
+  context: "Ex Deorum のブロック「ダスト」"
+  source: "exdeorum:block.exdeorum.dust (en: Dust)"
+  status: approved
+
+- en: "Crushed Netherrack"
+  ja: "砕かれたネザーラック"
+  translate: true
+  context: "Crushed X＝砕かれたX"
+  source: "exdeorum:block.exdeorum.crushed_netherrack (en: Crushed Netherrack)"
+  status: approved
+
+- en: "Crushed End Stone"
+  ja: "砕かれたエンドストーン"
+  translate: true
+  context: "原文の Crushed Endstone も同じ"
+  source: "exdeorum:block.exdeorum.crushed_end_stone (en: Crushed End Stone)"
+  status: approved
+
+- en: "Crushed Blackstone"
+  ja: "砕かれたブラックストーン"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.crushed_blackstone (en: Crushed Blackstone)"
+  status: approved
+
+- en: "End Cake"
+  ja: "エンドケーキ"
+  translate: true
+  context: ""
+  source: "exdeorum:block.exdeorum.end_cake (en: End Cake)"
+  status: approved
+
+- en: "Sculk Core"
+  ja: "スカルクコア"
+  translate: true
+  context: ""
+  source: "exdeorum:item.exdeorum.sculk_core (en: Sculk Core)"
+  status: approved
+
+- en: "Compressed Gravel"
+  ja: "圧縮された砂利"
+  translate: true
+  context: "Ex Deorum 側の圧縮ブロック。AllTheCompressed は「砂利 1x」の型"
+  source: "exdeorum:block.exdeorum.compressed_gravel (en: Compressed Gravel)"
+  status: approved
+
+- en: "Gravel 1x"
+  ja: "砂利 1x"
+  translate: true
+  context: "AllTheCompressed の圧縮ブロックの型"
+  source: "allthecompressed:block.allthecompressed.gravel_1x (en: Gravel 1x)"
+  status: approved
+
+- en: "Stone Block Generator"
+  ja: "石のブロック生成機"
+  translate: true
+  context: "クエストの「Stone Generator」はこれ"
+  source: "cobblegengalore:block.cobblegengalore.block_gen_stone (en: Stone Block Generator)"
+  status: approved
+
+- en: "Block Generator"
+  ja: "ブロック生成機"
+  translate: true
+  context: ""
+  source: "cobblegengalore:jei.cobblegengalore.blockgen (en: Block Generator)"
+  status: approved
+
+- en: "Foundry Controller"
+  ja: "黒色の鋳造炉コントローラー"
+  translate: true
+  context: "色つきの「黒色の鋳造炉コントローラー」から。Foundry＝鋳造炉"
+  source: "productivemetalworks:block.productivemetalworks.black_foundry_controller (en: Black Foundry Controller)"
+  status: approved
+
+- en: "Foundry Drain"
+  ja: "黒色の鋳造炉のドレン"
+  translate: true
+  context: "Drain＝ドレン"
+  source: "productivemetalworks:block.productivemetalworks.black_foundry_drain (en: Black Foundry Drain)"
+  status: approved
+
+- en: "Foundry Tank"
+  ja: "黒色の鋳造炉のタンク"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.black_foundry_tank (en: Black Foundry Tank)"
+  status: approved
+
+- en: "Foundry Tap"
+  ja: "鋳造炉の蛇口"
+  translate: true
+  context: "Tap＝蛇口"
+  source: "productivemetalworks:block.productivemetalworks.foundry_tap (en: Foundry Tap)"
+  status: approved
+
+- en: "Liquid Heating Coil"
+  ja: "液体加熱コイル"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.liquid_heating_coil (en: Liquid Heating Coil)"
+  status: approved
+
+- en: "Casting Basin"
+  ja: "鋳造鉢"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.casting_basin (en: Casting Basin)"
+  status: approved
+
+- en: "Casting Table"
+  ja: "鋳造台"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.casting_table (en: Casting Table)"
+  status: approved
+
+- en: "Fire Clay"
+  ja: "耐火粘土"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.fire_clay (en: Fire Clay)"
+  status: approved
+
+- en: "Fire Brick"
+  ja: "耐火レンガ"
+  translate: true
+  context: ""
+  source: "productivemetalworks:item.productivemetalworks.fire_brick (en: Fire Brick)"
+  status: approved
+
+- en: "Black Fire Bricks"
+  ja: "黒色の耐火レンガ"
+  translate: true
+  context: ""
+  source: "productivemetalworks:block.productivemetalworks.black_fire_bricks (en: Black Fire Bricks)"
+  status: approved
+
+- en: "Growth Accelerator"
+  ja: "成長加速器"
+  translate: true
+  context: ""
+  source: "ae2:block.ae2.growth_accelerator (en: Growth Accelerator)"
+  status: approved
+
+- en: "Cranked Growth Accelerator"
+  ja: "クランク式成長加速器"
+  translate: true
+  context: ""
+  source: "growthacceleratortiers:block.growthacceleratortiers.cranked_growth_accelerator (en: Cranked Growth Accelerator)"
+  status: approved
+
+- en: "Boosted Growth Accelerator"
+  ja: "加速型成長加速器"
+  translate: true
+  context: ""
+  source: "growthacceleratortiers:block.growthacceleratortiers.boosted_growth_accelerator (en: Boosted Growth Accelerator)"
+  status: approved
+
+- en: "Directional Growth Accelerator"
+  ja: "方向指定型成長加速器"
+  translate: true
+  context: ""
+  source: "growthacceleratortiers:block.growthacceleratortiers.directional_growth_accelerator (en: Directional Growth Accelerator)"
+  status: approved
+
+- en: "Infusion Altar"
+  ja: "注入の祭壇"
+  translate: true
+  context: ""
+  source: "mysticalagriculture:block.mysticalagriculture.infusion_altar (en: Infusion Altar)"
+  status: approved
+
+- en: "Infusion Pedestal"
+  ja: "注入の台座"
+  translate: true
+  context: ""
+  source: "mysticalagriculture:block.mysticalagriculture.infusion_pedestal (en: Infusion Pedestal)"
+  status: approved
+
+- en: "Prosperity Shard"
+  ja: "プロスペリティの欠片"
+  translate: true
+  context: ""
+  source: "mysticalagriculture:item.mysticalagriculture.prosperity_shard (en: Prosperity Shard)"
+  status: approved
+
+- en: "Inferium Essence"
+  ja: "インフェリウムのエッセンス"
+  translate: true
+  context: ""
+  source: "mysticalagriculture:item.mysticalagriculture.inferium_essence (en: Inferium Essence)"
+  status: approved
+
+- en: "Soulium Dust"
+  ja: "ソウリウムダスト"
+  translate: true
+  context: ""
+  source: "mysticalagriculture:item.mysticalagriculture.soulium_dust (en: Soulium Dust)"
+  status: approved
+
+- en: "Inscriber"
+  ja: "刻印機"
+  translate: true
+  context: ""
+  source: "ae2:block.ae2.inscriber (en: Inscriber)"
+  status: approved
+
+- en: "ME Controller"
+  ja: "MEコントローラー"
+  translate: true
+  context: ""
+  source: "ae2:block.ae2.controller (en: ME Controller)"
+  status: approved
+
+- en: "Fluix Crystal"
+  ja: "フルーシュの水晶"
+  translate: true
+  context: "Fluix＝フルーシュ"
+  source: "ae2:item.ae2.fluix_crystal (en: Fluix Crystal)"
+  status: approved
+
+- en: "Certus Quartz Crystal"
+  ja: "ケルタスクォーツの水晶"
+  translate: true
+  context: "Certus＝ケルタスクォーツ"
+  source: "ae2:item.ae2.certus_quartz_crystal (en: Certus Quartz Crystal)"
+  status: approved
+
+- en: "Charged Certus Quartz Crystal"
+  ja: "チャージ済みケルタスクォーツの水晶"
+  translate: true
+  context: ""
+  source: "ae2:item.ae2.charged_certus_quartz_crystal (en: Charged Certus Quartz Crystal)"
+  status: approved
+
+- en: "Charger"
+  ja: "チャージャー"
+  translate: true
+  context: ""
+  source: "ae2:block.ae2.charger (en: Charger)"
+  status: approved
+
+- en: "Sky Stone Dust"
+  ja: "スカイストーンダスト"
+  translate: true
+  context: ""
+  source: "ae2:item.ae2.sky_dust (en: Sky Stone Dust)"
+  status: approved
+
+- en: "Singularity"
+  ja: "シンギュラリティ"
+  translate: true
+  context: "AE2 のアイテム。Extended Crafting のシンギュラリティも同じ語"
+  source: "ae2:item.ae2.singularity (en: Singularity)"
+  status: approved
+
+- en: "Flux Dust"
+  ja: "フラックスの粉"
+  translate: true
+  context: ""
+  source: "fluxnetworks:item.fluxnetworks.flux_dust (en: Flux Dust)"
+  status: approved
+
+- en: "Flux Core"
+  ja: "フラックスコア"
+  translate: true
+  context: ""
+  source: "fluxnetworks:item.fluxnetworks.flux_core (en: Flux Core)"
+  status: approved
+
+- en: "Absorption Hopper"
+  ja: "吸収ホッパー"
+  translate: true
+  context: ""
+  source: "mob_grinding_utils:block.mob_grinding_utils.absorption_hopper (en: Absorption Hopper)"
+  status: approved
+
+- en: "Entity Conveyor"
+  ja: "エンティティコンベア"
+  translate: true
+  context: ""
+  source: "mob_grinding_utils:block.mob_grinding_utils.entity_conveyor (en: Entity Conveyor)"
+  status: approved
+
+- en: "Mob Masher"
+  ja: "モブ用マッシャー"
+  translate: true
+  context: ""
+  source: "mob_grinding_utils:block.mob_grinding_utils.saw (en: Mob Masher)"
+  status: approved
+
+- en: "Iron Spikes"
+  ja: "鉄のスパイク"
+  translate: true
+  context: ""
+  source: "mob_grinding_utils:block.mob_grinding_utils.spikes (en: Iron Spikes)"
+  status: approved
+
+- en: "Nutritious Chicken Feed"
+  ja: "栄養価の高いニワトリのエサ"
+  translate: true
+  context: ""
+  source: "mob_grinding_utils:item.mob_grinding_utils.nutritious_chicken_feed (en: Nutritious Chicken Feed)"
+  status: approved
+
+- en: "Dielectric Paste"
+  ja: "誘電体ペースト"
+  translate: true
+  context: ""
+  source: "powah:item.powah.dielectric_paste (en: Dielectric Paste)"
+  status: approved
+
+- en: "Basic Capacitor"
+  ja: "基本型キャパシタ"
+  translate: true
+  context: "Powah の Basic Capacitor（EnderIO の訳とは別）"
+  source: "powah:item.powah.capacitor_basic (en: Basic Capacitor)"
+  status: approved
+
+- en: "Metallurgic Infuser"
+  ja: "冶金吹込機"
+  translate: true
+  context: ""
+  source: "mekanism:block.mekanism.metallurgic_infuser (en: Metallurgic Infuser)"
+  status: approved
+
+- en: "Steel Ingot"
+  ja: "鋼鉄インゴット"
+  translate: true
+  context: "Steel＝鋼鉄"
+  source: "mekanism:item.mekanism.ingot_steel (en: Steel Ingot)"
+  status: approved
+
+- en: "Steel Dust"
+  ja: "鋼鉄の粉"
+  translate: true
+  context: ""
+  source: "mekanism:item.mekanism.dust_steel (en: Steel Dust)"
+  status: approved
+
+- en: "Enriched Iron"
+  ja: "濃縮鉄"
+  translate: true
+  context: ""
+  source: "mekanism:item.mekanism.enriched_iron (en: Enriched Iron)"
+  status: approved
+
+- en: "Andesite Alloy"
+  ja: "安山岩合金"
+  translate: true
+  context: ""
+  source: "create:item.create.andesite_alloy (en: Andesite Alloy)"
+  status: approved
+
+- en: "Salvaging Table"
+  ja: "解体作業台"
+  translate: true
+  context: ""
+  source: "apotheosis:block.apotheosis.salvaging_table (en: Salvaging Table)"
+  status: approved
+
+- en: "Gem Dust"
+  ja: "ジェムの粉"
+  translate: true
+  context: ""
+  source: "apotheosis:item.apotheosis.gem_dust (en: Gem Dust)"
+  status: approved
+
+- en: "Draconium Dust"
+  ja: "ドラコニウムの粉"
+  translate: true
+  context: ""
+  source: "draconicevolution:item.draconicevolution.draconium_dust (en: Draconium Dust)"
+  status: approved
+
+- en: "Ender Crafter"
+  ja: "エンダークラフター"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.ender_crafter (en: Ender Crafter)"
+  status: approved
+
+- en: "Ender Alternator"
+  ja: "エンダーオルタネーター"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.ender_alternator (en: Ender Alternator)"
+  status: approved
+
+- en: "Advanced Crafting Table"
+  ja: "発展型作業台"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.advanced_table (en: Advanced Crafting Table)"
+  status: approved
+
+- en: "Elite Crafting Table"
+  ja: "精鋭型作業台"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.elite_table (en: Elite Crafting Table)"
+  status: approved
+
+- en: "Ultimate Crafting Table"
+  ja: "究極型作業台"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.ultimate_table (en: Ultimate Crafting Table)"
+  status: approved
+
+- en: "Crystaltine Ingot"
+  ja: "クリスタルチンインゴット"
+  translate: true
+  context: ""
+  source: "extendedcrafting:item.extendedcrafting.crystaltine_ingot (en: Crystaltine Ingot)"
+  status: approved
+
+- en: "Quantum Compressor"
+  ja: "量子圧縮機"
+  translate: true
+  context: ""
+  source: "extendedcrafting:block.extendedcrafting.compressor (en: Quantum Compressor)"
+  status: approved
+
+- en: "Ultimate Catalyst"
+  ja: "究極カタリスト"
+  translate: true
+  context: ""
+  source: "extendedcrafting:item.extendedcrafting.ultimate_catalyst (en: Ultimate Catalyst)"
+  status: approved
+
+- en: "Stasis Chamber"
+  ja: "mob静止室"
+  translate: true
+  context: ""
+  source: "industrialforegoing:block.industrialforegoing.stasis_chamber (en: Stasis Chamber)"
+  status: approved
+
+- en: "Laser Drill"
+  ja: "レーザードリル"
+  translate: true
+  context: ""
+  source: "industrialforegoing:block.industrialforegoing.laser_drill (en: Laser Drill)"
+  status: approved
+
+- en: "Fluid Laser Base"
+  ja: "流体レーザーベース"
+  translate: true
+  context: ""
+  source: "industrialforegoing:block.industrialforegoing.fluid_laser_base (en: Fluid Laser Base)"
+  status: approved
+
+- en: "Squeezer"
+  ja: "圧搾器"
+  translate: true
+  context: ""
+  source: "integrateddynamics:block.integrateddynamics.squeezer (en: Squeezer)"
+  status: approved
+
+- en: "Honey Generator"
+  ja: "ハチミツ発電機"
+  translate: true
+  context: "Productive Bees 側の公式訳。Generators Galore の Honey Generator もこれに合わせる"
+  source: "productivebees:block.productivebees.honey_generator (en: Honey Generator)"
+  status: approved
+
+- en: "Ancient Bee"
+  ja: "古代のミツバチ"
+  translate: true
+  context: ""
+  source: "productivebees:entity.productivebees.netherite_bee (en: Ancient Bee)"
+  status: approved
+
+- en: "Archmage Spell Book"
+  ja: "大魔導士のスペルブック"
+  translate: true
+  context: ""
+  source: "ars_nouveau:item.ars_nouveau.archmage_spell_book (en: Archmage Spell Book)"
+  status: approved
+
+- en: "Hostile Creatures"
+  ja: "敵対的Mob"
+  translate: true
+  context: "Hostile Mobs＝敵対的Mob"
+  source: "minecraft:soundCategory.hostile (en: Hostile Creatures)"
+  status: approved
+
+- en: "Friendly Creatures"
+  ja: "友好的Mob"
+  translate: true
+  context: "Passive Mobs＝友好的Mob"
+  source: "minecraft:soundCategory.neutral (en: Friendly Creatures)"
+  status: approved
+
+- en: "Eye of Ender"
+  ja: "エンダーアイ"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.ender_eye (en: Eye of Ender)"
+  status: approved
+
+- en: "Ender Pearl"
+  ja: "エンダーパール"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.ender_pearl (en: Ender Pearl)"
+  status: approved
+
+- en: "Soul Sand"
+  ja: "ソウルサンド"
+  translate: true
+  context: ""
+  source: "minecraft:block.minecraft.soul_sand (en: Soul Sand)"
+  status: approved
+
+- en: "Obsidian"
+  ja: "黒曜石"
+  translate: true
+  context: ""
+  source: "minecraft:block.minecraft.obsidian (en: Obsidian)"
+  status: approved
+
+- en: "Netherite Ingot"
+  ja: "ネザライトインゴット"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.netherite_ingot (en: Netherite Ingot)"
+  status: approved
+
+- en: "Netherite Scrap"
+  ja: "ネザライトの欠片"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.netherite_scrap (en: Netherite Scrap)"
+  status: approved
+
+- en: "Ancient Debris"
+  ja: "古代の残骸"
+  translate: true
+  context: ""
+  source: "minecraft:block.minecraft.ancient_debris (en: Ancient Debris)"
+  status: approved
+
+- en: "Nether Star"
+  ja: "ネザースター"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.nether_star (en: Nether Star)"
+  status: approved
+
+- en: "Nether Portal"
+  ja: "ネザーポータル"
+  translate: true
+  context: ""
+  source: "minecraft:block.minecraft.nether_portal (en: Nether Portal)"
+  status: approved
+
+- en: "Nether"
+  ja: "ネザー"
+  translate: true
+  context: "The Nether も「ネザー」"
+  source: "minecraft:advancements.nether.root.title (en: Nether)"
+  status: approved
+
+- en: "The End"
+  ja: "ジ・エンド"
+  translate: true
+  context: ""
+  source: "minecraft:advancements.end.root.title (en: The End)"
+  status: approved
+
+- en: "End Highlands"
+  ja: "エンドの高地"
+  translate: true
+  context: ""
+  source: "minecraft:biome.minecraft.end_highlands (en: End Highlands)"
+  status: approved
+
+- en: "Wither"
+  ja: "ウィザー"
+  translate: true
+  context: "ボス。The Wither＝ウィザー。効果の Wither（衰弱）とは区別"
+  source: "minecraft:entity.minecraft.wither (en: Wither)"
+  status: approved
+
+- en: "Wither Skeleton"
+  ja: "ウィザースケルトン"
+  translate: true
+  context: ""
+  source: "minecraft:entity.minecraft.wither_skeleton (en: Wither Skeleton)"
+  status: approved
+
+- en: "Warden"
+  ja: "ウォーデン"
+  translate: true
+  context: ""
+  source: "minecraft:entity.minecraft.warden (en: Warden)"
+  status: approved
+
+- en: "Ender Dragon"
+  ja: "エンダードラゴン"
+  translate: true
+  context: ""
+  source: "minecraft:entity.minecraft.ender_dragon (en: Ender Dragon)"
+  status: approved
+
+- en: "Echo Shard"
+  ja: "残響の欠片"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.echo_shard (en: Echo Shard)"
+  status: approved
+
+- en: "Sculk Shrieker"
+  ja: "スカルクシュリーカー"
+  translate: true
+  context: ""
+  source: "minecraft:block.minecraft.sculk_shrieker (en: Sculk Shrieker)"
+  status: approved
+
+- en: "Dragon's Breath"
+  ja: "ドラゴンブレス"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.dragon_breath (en: Dragon's Breath)"
+  status: approved
+
+- en: "Budding Amethyst"
+  ja: "芽生えたアメジスト"
+  translate: true
+  context: "GeOre の Budding の訳の基準"
+  source: "minecraft:block.minecraft.budding_amethyst (en: Budding Amethyst)"
+  status: approved
+
+- en: "Amethyst Cluster"
+  ja: "アメジストの塊"
+  translate: true
+  context: "GeOre の Cluster の訳の基準"
+  source: "minecraft:block.minecraft.amethyst_cluster (en: Amethyst Cluster)"
+  status: approved
+
+- en: "Amethyst Shard"
+  ja: "アメジストの欠片"
+  translate: true
+  context: "GeOre の Shard の訳の基準"
+  source: "minecraft:item.minecraft.amethyst_shard (en: Amethyst Shard)"
+  status: approved
+
+- en: "Furnace"
+  ja: "かまど"
+  translate: true
+  context: "Iron Furnaces の訳の基準"
+  source: "minecraft:block.minecraft.furnace (en: Furnace)"
+  status: approved
+
+- en: "Monster Spawner"
+  ja: "モンスタースポナー"
+  translate: true
+  context: "Spawner＝スポナー"
+  source: "minecraft:block.minecraft.spawner (en: Monster Spawner)"
+  status: approved
+
+- en: "Bone Meal"
+  ja: "骨粉"
+  translate: true
+  context: "Bonemeal も同じ"
+  source: "minecraft:item.minecraft.bone_meal (en: Bone Meal)"
+  status: approved
+
+- en: "Moss Block"
+  ja: "苔ブロック"
+  translate: true
+  context: "Moss＝苔"
+  source: "minecraft:block.minecraft.moss_block (en: Moss Block)"
+  status: approved
+
+- en: "Milk Bucket"
+  ja: "ミルク入りバケツ"
+  translate: true
+  context: "Milk＝ミルク"
+  source: "minecraft:item.minecraft.milk_bucket (en: Milk Bucket)"
+  status: approved
+
+- en: "Raw Iron"
+  ja: "鉄の原石"
+  translate: true
+  context: "Raw Ore＝原石"
+  source: "minecraft:item.minecraft.raw_iron (en: Raw Iron)"
+  status: approved
+
+- en: "Block of Raw Iron"
+  ja: "鉄の原石ブロック"
+  translate: true
+  context: "Raw Ore Block＝原石ブロック"
+  source: "minecraft:block.minecraft.raw_iron_block (en: Block of Raw Iron)"
+  status: approved
+
+- en: "Smithing Template"
+  ja: "鍛冶型"
+  translate: true
+  context: "Upgrade Template＝強化用の鍛冶型（文脈による）"
+  source: "minecraft:item.minecraft.netherite_upgrade_smithing_template (en: Smithing Template)"
+  status: approved
+
+- en: "Mace"
+  ja: "メイス"
+  translate: true
+  context: ""
+  source: "minecraft:item.minecraft.mace (en: Mace)"
+  status: approved
+
+- en: "Iron Furnace"
+  ja: "鉄のかまど"
+  translate: true
+  context: "Iron Furnaces（公式訳なし）。バニラ Furnace＝かまど に合わせる。Golden Furnace＝金のかまど、Diamond Furnace＝ダイヤモンドのかまど、Netherite Furnace＝ネザライトのかまど"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Allthemodium Furnace"
+  ja: "Allthemodiumのかまど"
+  translate: true
+  context: "Allthemodium は英字（Allthemodiumのスペルブック の型）。Vibranium Furnace＝ヴィブラニウムのかまど、Unobtainium Furnace＝アンオブタニウムのかまど"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Iron Generator"
+  ja: "鉄の発電機"
+  translate: true
+  context: "Generators Galore（公式訳なし）。素材名＋「の発電機」。Netherite Generator＝ネザライトの発電機"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Magmatic Generator"
+  ja: "マグマ発電機"
+  translate: true
+  context: "Generators Galore。溶岩を燃料にする発電機"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Culinary Generator"
+  ja: "料理発電機"
+  translate: true
+  context: "Generators Galore。食べ物を燃料にする"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Potion Generator"
+  ja: "ポーション発電機"
+  translate: true
+  context: ""
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Ender Generator"
+  ja: "エンダー発電機"
+  translate: true
+  context: "エンダーパールを燃料にする"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Halitosis Generator"
+  ja: "口臭発電機"
+  translate: true
+  context: "ドラゴンブレスを燃料にする冗談の名前（Halitosis＝口臭）。ネタを残す"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Enchantment Generator"
+  ja: "エンチャント発電機"
+  translate: true
+  context: ""
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Netherstar Generator"
+  ja: "ネザースター発電機"
+  translate: true
+  context: ""
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "8x Generator"
+  ja: "8x発電機"
+  translate: true
+  context: "「8x」「64x」は英数字のまま（圧縮の段階を表す記号）"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Budding Iron GeOre"
+  ja: "芽生えた鉄GeOre"
+  translate: true
+  context: "GeOre（公式訳なし）。GeOre は MOD 名なので英字のまま。バニラ Budding Amethyst＝芽生えたアメジスト の型"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Iron GeOre Cluster"
+  ja: "鉄GeOreの塊"
+  translate: true
+  context: "バニラ Amethyst Cluster＝アメジストの塊 の型"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Iron GeOre Shard"
+  ja: "鉄GeOreの欠片"
+  translate: true
+  context: "バニラ Amethyst Shard＝アメジストの欠片 の型"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Flux Sieve"
+  ja: "フラックスふるい"
+  translate: true
+  context: "Ex Machinis（公式訳なし）。電力で動くふるい。Flux はカタカナ"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Flux Hammer"
+  ja: "フラックスハンマー"
+  translate: true
+  context: "Ex Machinis"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Flux Compactor"
+  ja: "フラックス圧縮機"
+  translate: true
+  context: "Ex Machinis"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Gold Upgrade"
+  ja: "金のアップグレード"
+  translate: true
+  context: "Ex Machinis。Functional Storage の公式訳「金のアップグレード」に合わせる。Diamond＝ダイヤモンドのアップグレード、Netherite＝ネザライトのアップグレード"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Gate Pearl"
+  ja: "ゲートパール"
+  translate: true
+  context: "Gateways to Eternity（公式訳なし）"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Gateway"
+  ja: "ゲートウェイ"
+  translate: true
+  context: "Gateways to Eternity。クエストの Gates も「ゲートウェイ」"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Skyblock"
+  ja: "スカイブロック"
+  translate: true
+  context: "ジャンル名。カタカナ"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Island"
+  ja: "島"
+  translate: true
+  context: "スカイブロックの島"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Sieving"
+  ja: "ふるいにかける"
+  translate: true
+  context: "動詞。Sieve it＝ふるいにかける、Sieved＝ふるいにかけた"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Hammering"
+  ja: "ハンマーで砕く"
+  translate: true
+  context: "動詞"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Hearts"
+  ja: "ハート"
+  translate: true
+  context: "体力の単位"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Infinite Water Source"
+  ja: "無限水源"
+  translate: true
+  context: ""
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Heat Source"
+  ja: "熱源"
+  translate: true
+  context: "るつぼの下に置く熱源"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "Compressed Block"
+  ja: "圧縮ブロック"
+  translate: true
+  context: "AllTheCompressed の圧縮ブロック全般"
+  source: "訳語案（公式訳なし）"
+  status: approved
+  revised_ja:
+
+- en: "FE"
+  translate: false
+  context: "単位（Forge Energy）。英字のまま"
+  status: approved
+
+- en: "RF"
+  translate: false
+  context: "単位。英字のまま"
+  status: approved
+
+- en: "mB"
+  translate: false
+  context: "流体の単位（ミリバケツ）。英字のまま"
+  status: approved
+
+- en: "AE2"
+  translate: false
+  context: "MOD 名の略称"
+  status: approved
+
+- en: "MA"
+  translate: false
+  context: "Mystical Agriculture の略称。初出では「Mystical Agriculture（MA）」と補ってもよい"
+  status: approved
+
+- en: "ATM10TTS"
+  translate: false
+  context: "パック名の略称（All The Mods 10: To the Sky）"
+  status: approved
+
+- en: "ATM"
+  translate: false
+  context: "パック名（All The Mods）"
+  status: approved
+
+- en: "JEI"
+  translate: false
+  context: "MOD 名"
+  status: approved
+
+- en: "GeOre"
+  translate: false
+  context: "MOD 名。アイテム名の中でも英字のまま"
+  status: approved
+
+- en: "Allthemodium"
+  translate: false
+  context: "ATM 独自素材。公式訳が英字のまま（2026-10-20 決定）"
+  status: approved
+
+# --- 2026-10-20 追加（tips_and_tricks で使う、公式訳のないMODのアイテム名。後でそのMODの lang を訳すときもこれに合わせる） ---
+- en: "Personal Shrinking Device"
+  ja: "個人用縮小装置"
+  translate: true
+  context: "Shrink・Compact Machines（どちらも公式訳なし）。両方のMODで同じ訳にする"
+  source: "訳語案（公式訳なし）"
+  status: approved
+
+- en: "Charging Station"
+  ja: "充電ステーション"
+  translate: true
+  context: "Charging Gadgets（公式訳なし）。IE の公式訳 block.immersiveengineering.charging_station に合わせる"
+  source: "immersiveengineering:block.immersiveengineering.charging_station (en: Charging Station)"
+  status: approved
+
+- en: "Magnet"
+  ja: "磁石"
+  translate: true
+  context: "Simple Magnets（公式訳なし）。Pickle Tweaks の公式訳 item.pickletweaks.magnet に合わせる。Advanced Magnet＝高度な磁石"
+  source: "pickletweaks:item.pickletweaks.magnet (en: Magnet)"
+  status: approved

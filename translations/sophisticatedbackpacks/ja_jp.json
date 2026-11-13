@@ -1,0 +1,5 @@
+{
+ "commands.sophisticatedbackpacks.template.unsupported_host": "テンプレートを使うには、リュックが主になっている連結ストレージグループが必要です",
+ "sophisticatedbackpacks.configuration.server": "サーバー",
+ "sophisticatedbackpacks.configuration.common": "共通"
+}

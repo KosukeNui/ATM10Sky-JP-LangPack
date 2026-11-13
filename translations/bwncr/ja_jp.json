@@ -1,0 +1,20 @@
+{
+ "badwithernocookiereloaded.general.tooltip": "キャンセルできるグローバルな基本サウンドとイベント",
+ "badwithernocookiereloaded.xtra.tooltip": "キャンセルできる追加ローカライズサウンド",
+ "badwithernocookiereloaded.localized settings.silenceus": "例: entity.sheep.step - 他のサウンドには /listenを使用してください",
+ "bwncr.configuration.general": "全般",
+ "bwncr.config.silenceUs": "このMODの通知を消す",
+ "bwncr.config.silenceWither": "ウィザーの音を消す",
+ "bwncr.config.debugMode": "デバッグモード",
+ "bwncr.config.silenceTrader": "行商人の音を消す",
+ "bwncr.config.silenceLightning": "雷の音を消す",
+ "bwncr.config.silenceDragon": "ドラゴンの音を消す",
+ "text.autoconfig.bwncr.title": "Bad Wither No Cookie - Reloaded",
+ "text.autoconfig.bwncr.option.general": "一般",
+ "text.autoconfig.bwncr.option.general.silenceWither": "ウィザーを無音化",
+ "text.autoconfig.bwncr.option.general.silenceTrader": "行商人を無音化",
+ "text.autoconfig.bwncr.option.general.silenceDragon": "エンダードラゴンを無音化",
+ "text.autoconfig.bwncr.option.general.silenceLightning": "雷を無音化",
+ "text.autoconfig.bwncr.option.general.silenceUs": "「Us」を無音化",
+ "text.autoconfig.bwncr.option.general.debugMode": "デバッグモード"
+}

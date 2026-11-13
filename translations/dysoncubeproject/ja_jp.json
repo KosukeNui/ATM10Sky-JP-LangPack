@@ -1,0 +1,18 @@
+{
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_100.description": "帆の100%を打ち出した。日光は今や定額制だ。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_100.title": "おめでとう！日光はあなたのもの",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_15.description": "帆の15%を打ち出した。地元の光子から苦情が来ている。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_15.title": "ちょっと気になる太陽包囲",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_25.description": "帆の25%を打ち出した。宇宙規模のばかげた計画の4分の1まで来た。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_25.title": "球は4分の1、野望は満タン",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_5.description": "帆の5%を打ち出した。太陽はほとんど気づいていない。たぶん。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_5.title": "太陽に通知済み",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_50.description": "帆の50%を打ち出した。球は半分、思い上がりは2倍。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_50.title": "恒星の大家まであと半分",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_75.description": "帆の75%を打ち出した。太陽は正式に逃げ道を探し始めている。",
+ "advancement.dysoncubeproject.em_railejector_controller/sphere_percentage_75.title": "太陽が不安そう",
+ "advancement.dysoncubeproject.root.description": "今日、我々は太陽を盗む！",
+ "advancement.dysoncubeproject.root.title": "Dyson Cube Project",
+ "gui.dysoncubeproject.unsubscribe": "すべての球の購読をやめる（自分の球に戻ります）",
+ "tooltip.dysoncubeproject.power_optional": "*電力は任意。電力があると、打ち出すビーム・帆の数を増やせる*"
+}

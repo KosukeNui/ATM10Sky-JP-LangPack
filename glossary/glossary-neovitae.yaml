@@ -1,0 +1,37 @@
+# Neo Vitae の固有名詞（2026-10-23 作成）
+# 同梱の公式訳 ja_jp（189キー）は機械翻訳で誤訳が多いため、用語の基準にはしない（例: Tome of Peritia →「Peritiaの墓」）。
+# Blood Magic の既存訳も見つからなかった（全インスタンスの jar・自作アーカイブを確認。BloodMagic 1.18.2 jar に ja_jp なし）。
+# 方針: ラテン語の名前は読みをカタカナにする（V はヴ）。意味のある英語は意訳。
+
+- {en: "Vitae", ja: "ヴィタエ", context: "MOD の中心の概念。Essentia Vitae＝エッセンティア・ヴィタエ（EV と略す）", status: approved}
+- {en: "Essentia Vitae (EV)", ja: "エッセンティア・ヴィタエ（EV）", context: "旧 Blood Magic の LP にあたるもの", status: approved}
+- {en: "Ara Vitae", ja: "アラ・ヴィタエ", context: "祭壇（旧 Blood Altar）", status: approved}
+- {en: "Orb of Vitae", ja: "ヴィタエのオーブ", context: "Novicius/Discipulus/Veneficus/Magus/Dominus/Divinus＝ノウィキウス/ディスキプルス/ウェネフィクス/マグス/ドミヌス/ディウィヌス", status: approved}
+- {en: "Anima Network", ja: "アニマネットワーク", context: "旧 Soul Network", status: approved}
+- {en: "Spiritus", ja: "スピリトゥス", context: "旧 Demon Will。公式訳もスピリトゥス", status: approved}
+- {en: "Raw / Ruina / Nihilum / Invictus / Vindicta", ja: "生 / ルイナ / ニヒルム / インヴィクトゥス / ヴィンディクタ", context: "スピリトゥスのアスペクト。Raw Spiritus＝生のスピリトゥス", status: approved}
+- {en: "Aspect", ja: "アスペクト", context: "スピリトゥスの属性", status: approved}
+- {en: "Tabula", ja: "タブラ", context: "Tabula Vitae＝タブラ・ヴィタエ、Tabula Rasa＝タブラ・ラサ など", status: approved}
+- {en: "Sigil", ja: "シジル", context: "", status: approved}
+- {en: "Sentient", ja: "センティエント", context: "センティエントの剣・防具。Sentient Plate＝センティエントプレート", status: approved}
+- {en: "Hellforged", ja: "ヘルフォージド", context: "Hellforged Ingot＝ヘルフォージドインゴット", status: approved}
+- {en: "Hellfire Forge", ja: "ヘルファイアの炉", context: "", status: approved}
+- {en: "Demonite", ja: "デモナイト", context: "", status: approved}
+- {en: "Demon Realm", ja: "悪魔の領域", context: "ダンジョンのディメンション", status: approved}
+- {en: "Ritual Stone / Master Ritual Stone", ja: "儀式の石 / マスター儀式の石", context: "公式訳のチャットの表記に合わせた", status: approved}
+- {en: "Ritual Diviner", ja: "儀式の占い棒", context: "", status: approved}
+- {en: "Tenebrae / Deus", ja: "テネブラエ / デウス", context: "儀式の段階（ルーンの種類）", status: approved}
+- {en: "Alchemy Array", ja: "錬金陣", context: "Arcane Scribe Tool＝秘術の刻印ツール、Inscription Tool＝刻印ツール", status: approved}
+- {en: "Activation Crystal", ja: "起動クリスタル", context: "Weak/Awakened＝弱い/覚醒した", status: approved}
+- {en: "Spiritus Gem", ja: "スピリトゥスジェム", context: "Petty/Lesser/Common/Greater/Grand＝極小/小/普通/大/特大", status: approved}
+- {en: "Upgrade Tome", ja: "強化の書", context: "Upgrade Tome (Pin Cushion)＝強化の書（針山）", status: approved}
+- {en: "Anointment", ja: "塗油", context: "道具に塗る消耗アイテム。Holy Water＝聖水 など", status: approved}
+- {en: "Tome of Peritia", ja: "ペリティアの書", context: "経験値をためる本（Peritia＝ラテン語で経験）", status: approved}
+- {en: "Teleposer / Teleposition", ja: "テレポーザー / テレポジション", context: "", status: approved}
+- {en: "Daemonium ...", ja: "ダエモニウム・…", context: "悪魔のモブ。Animaris＝アニマリス など", status: approved}
+- {en: "Routing Node", ja: "ルーティングノード", context: "Master/Input/Output＝マスター/入力/出力", status: approved}
+- {en: "Tau", ja: "タウ", context: "植物。Strong/Weak Tau＝強いタウ/弱いタウ", status: approved}
+- {en: "Athanor", ja: "アタノール", context: "錬金術の炉", status: approved}
+- {en: "Spiritus Crucible", ja: "スピリトゥスのるつぼ", context: "", status: approved}
+- {en: "Crystallarium Maleficum", ja: "クリスタラリウム・マレフィクム", context: "", status: approved}
+- {en: "Reagent", ja: "試薬", context: "Reagent Air＝試薬（風）", status: approved}

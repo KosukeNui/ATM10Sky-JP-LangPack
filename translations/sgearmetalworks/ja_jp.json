@@ -1,0 +1,7 @@
+{
+ "entity.productivebees.uru_metal_bee": "ウルメタルバチ",
+ "material.group.silentgear.infusing": "注入",
+ "productivebees.ingredient.description.uru_metal_bee": "このハチを手に入れるには、スポーンエッグのクラフトレシピを調べてください。",
+ "trait.silentgear.sting_resist": "針への耐性",
+ "trait.silentgear.sting_resist.desc": "ハチに刺されても痛くなくなる"
+}

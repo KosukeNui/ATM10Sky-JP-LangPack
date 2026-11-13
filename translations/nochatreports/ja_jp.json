@@ -1,0 +1,18 @@
+{
+ "key.nochatreports.ctrl": "Ctrl",
+ "key.nochatreports.cmd": "Cmd",
+ "gui.nochatreports.safety_status.insecure_signing": "チャットの署名を有効にしています。送ったメッセージはすべて、チャットの報告であなたに不利な証拠として使われるおそれがあります。",
+ "gui.nochatreports.signing_required.contents": "このサーバーでは、すべてのチャットのメッセージに署名が必要です。つまりMojangに報告されるおそれがあり、すべてのマルチプレイサーバーへの参加を禁止されることがあります。たいていは、サーバーの持ち主がserver.propertiesの「enforce-secure-profile」を有効のままにしているためです（1.19.1からの初期設定）。\n\n「署名を許可」をクリックすると、このセッションのあいだメッセージの署名を有効にします。チャット画面の安全状態のボタンで、このサーバーの署名モードを選ぶこともできます。",
+ "chat.nochatreports.disabled.signing_requested": "サーバーが署名のないメッセージの配信を拒否しました。署名モードを変えるか、確認画面からチャットの署名を有効にできます。",
+ "configuration.NoChatReports.category.client": "クライアント",
+ "option.NoChatReports.defaultSigningMode": "初期の署名モード",
+ "option.NoChatReports.defaultSigningMode.tooltip": "チャットの署名を強制・許可するサーバーでの、署名モードの初期値を設定します。",
+ "option.NoChatReports.showEncryptionIndicators": "暗号化の目印を表示",
+ "option.NoChatReports.showEncryptionIndicators.tooltip": "暗号化したメッセージの目印（チャットのメッセージの左の紫の線と、マウスを重ねたときに右に出る§5§l(§r§5ȯ§5§l)§r）の表示を切り替えます。",
+ "option.NoChatReports.hideInsecureMessageIndicators": "確認されていないメッセージの目印を隠す",
+ "option.NoChatReports.hideSigningRequestMessage": "署名を求めるメッセージを隠す",
+ "option.NoChatReports.hideSigningRequestMessage.tooltip": "サーバーがクライアントにメッセージの署名を求めたときに出る、チャットのメッセージを隠します。",
+ "configuration.NoChatReports.category.lan": "LAN",
+ "option.NoChatReports.demandOnClientMessage": "クライアントを追放するときのメッセージ",
+ "option.NoChatReports.demandOnClientMessage.tooltip": "No Chat Reportsを入れていないクライアントがサーバーに入ろうとしたときに表示するメッセージ。"
+}

@@ -1,0 +1,14 @@
+{
+ "createaddition.tooltip.liquid_burning.info": "ストロー付きブレイズバーナーの情報：",
+ "createaddition.tooltip.liquid_burning.time_remaining": "燃焼の残り時間：",
+ "createaddition.tooltip.charging.info": "テスラコイルの情報：",
+ "createaddition.tooltip.charging.time_remaining": "充電の残り時間：",
+ "createaddition.tooltip.alternator.info": "オルタネーターの情報：",
+ "block.createaddition.electrum_block": "エレクトラムブロック",
+ "itemGroup.createaddition.main": "Create Crafts & Additions",
+ "death.attack.createaddition.barbed_wire": "%1$sは有刺鉄線を越えようとした",
+ "death.attack.createaddition.barbed_wire.player": "%1$sは%2$sと戦いながら有刺鉄線を越えようとした",
+ "death.attack.createaddition.tesla_coil": "%1$sは致死量の電気ショックを受けた",
+ "death.attack.createaddition.tesla_coil.player": "%1$sは%2$sと戦いながら致死量の電気ショックを受けた",
+ "tag.fluid.c.ignites": "燃える液体"
+}

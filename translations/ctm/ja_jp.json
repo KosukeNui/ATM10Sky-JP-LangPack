@@ -1,0 +1,9 @@
+{
+ "ctm.configuration.title": "CTMの設定",
+ "ctm.configuration.section.ctm.toml.title": "CTMの設定",
+ "ctm.configuration.section.ctm.toml": "CTMの設定",
+ "configuration.ctm.disable": "CTMを無効にする",
+ "configuration.ctm.disable.tooltip": "つながるテクスチャを完全に無効にします",
+ "configuration.ctm.connect_inside": "CTMの内側をつなげる",
+ "configuration.ctm.connect_inside.tooltip": "CTMのブロックで、内側の角をつなげないかどうかを選びます - https://imgur.com/eUywLZ4"
+}

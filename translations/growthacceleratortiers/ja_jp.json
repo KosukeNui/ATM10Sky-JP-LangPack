@@ -1,0 +1,16 @@
+{
+ "growthacceleratortiers.configuration.boosted_growth_accelerator": "強化型成長促進装置",
+ "growthacceleratortiers.configuration.boosted_idle_power_consumption": "強化型の待機中の消費電力",
+ "growthacceleratortiers.configuration.boosted_internal_energy_multiplier": "強化型の内部エネルギーの倍率",
+ "growthacceleratortiers.configuration.boosted_speed_multiplier": "強化型の速さの倍率",
+ "growthacceleratortiers.configuration.cranked_growth_accelerator": "全開型成長促進装置",
+ "growthacceleratortiers.configuration.cranked_idle_power_consumption": "全開型の待機中の消費電力",
+ "growthacceleratortiers.configuration.cranked_internal_energy_multiplier": "全開型の内部エネルギーの倍率",
+ "growthacceleratortiers.configuration.cranked_speed_multiplier": "全開型の速さの倍率",
+ "growthacceleratortiers.configuration.directional_growth_accelerator": "指向型成長促進装置",
+ "growthacceleratortiers.configuration.directional_idle_power_consumption": "指向型の待機中の消費電力",
+ "growthacceleratortiers.configuration.directional_internal_energy_multiplier": "指向型の内部エネルギーの倍率",
+ "growthacceleratortiers.configuration.directional_speed_multiplier": "指向型の速さの倍率",
+ "growthacceleratortiers.configuration.enable_conflicts": "競合を有効にする",
+ "growthacceleratortiers.configuration.general": "全般"
+}

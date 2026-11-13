@@ -1,0 +1,6 @@
+{
+ "item.merequester.wireless_requester_terminal": "無線MEリクエスターターミナル",
+ "key.ae2.wireless_requester_terminal": "無線MEリクエスターターミナルを開く",
+ "tooltip.merequester.cpu": "CPUなし",
+ "tooltip.merequester.cpu_desc": "クラフトに使えるCPUが見つかりません。CPUが見つかると処理を続けます。"
+}

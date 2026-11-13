@@ -1,0 +1,11 @@
+{
+ "book.occultism.dictionary_of_spirits.summoning_rituals.summon_smelter_t4.description": "焼きすぎ注意",
+ "item.occultism.ritual_dummy.sm/ritual/honeycomb": "儀式：ハニカムのクラフト",
+ "ritual.allthemods.ritual/honeycomb.started": "儀式が開始されました：ハニカムのクラフト",
+ "ritual.allthemods.ritual/honeycomb.finished": "儀式が完了しました：ハニカムのクラフト",
+ "ritual.allthemods.ritual/honeycomb.interrupted": "儀式が中断されました：ハニカムのクラフト",
+ "item.occultism.ritual_dummy.sm/ritual/misc_demonic_sapling": "儀式：悪魔の苗木の鍛造",
+ "ritual.allthemods.ritual/misc_demonic_sapling.started": "儀式が開始されました：悪魔の苗木の鍛造",
+ "ritual.allthemods.ritual/misc_demonic_sapling.finished": "儀式が完了しました：悪魔の苗木の鍛造",
+ "ritual.allthemods.ritual/misc_demonic_sapling.interrupted": "儀式が中断されました：悪魔の苗木の鍛造"
+}

@@ -1,0 +1,20 @@
+{
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.jeisync": "JEIの検索と同期",
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.jeisync.info": "検索欄をJEIと同期します。",
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.emisync": "EMIの検索と同期",
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.emisync.info": "検索欄をEMIと同期します。",
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.reisync": "REIの検索と同期",
+ "gui.integratedterminalscompat.terminal_storage.craftinggrid.reisync.info": "検索欄をREIと同期します。",
+ "gui.integratedterminalscompat.terminal_storage.jei.transfer.craftable": "自動クラフトできるアイテム",
+ "gui.integratedterminalscompat.terminal_storage.jei.transfer.craftable_partial": "一部を自動クラフトできるアイテム",
+ "gui.integratedterminalscompat.terminal_storage.jei.transfer.missing": "足りないアイテム",
+ "gui.integratedterminalscompat.terminal_storage.jei.transfer.craft.info": "Ctrl＋クリックで自動クラフトを始める",
+ "gui.integratedterminalscompat.terminal_storage.jei.transfer.craft.info_cmd": "Cmd＋クリックで自動クラフトを始める",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.error.title": "クラフトの作業のエラー",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.title.started_only": "自動クラフトの開始",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.title.failed_only": "自動クラフトの失敗",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.title.mixed": "自動クラフトの一部の失敗",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.started_only": "%sの自動クラフトを始めました",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.failed_only": "%sの自動クラフトに失敗しました",
+ "gui.integratedterminalscompat.terminal_storage.crafting_job.summary.mixed": "%sの自動クラフトを始めましたが、%sは失敗しました"
+}

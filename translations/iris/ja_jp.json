@@ -1,0 +1,13 @@
+{
+ "iris.shaders.debug.restartNoDebug": "シェーダーのデバッグを有効にしました。NeoForgeではOpenGLのデバッグには対応していません。",
+ "iris.load.failure.shader": "シェーダーパックの読み込みに失敗しました！シェーダー開発者にエラーを報告してください。",
+ "iris.load.failure.generic": "Irisがシェーダーの読み込み中に問題が発生しました。Iris開発者に報告してください。",
+ "iris.shaders.ssbofailure": "このシェーダーは、お使いのGPUがサポートしていない特定の機能(SSBO)を要求しています。正常に動作しない可能性があります。",
+ "iris.keybind.wireframe": "ワイヤーフレーム（シングルプレイヤー専用）",
+ "iris.nec.failure.title": "[%s] Not Enough Crashesを検出しました！",
+ "iris.nec.failure.description": "Not Enough Crashesはクラッシュ処理中にゲームを著しく破損させることがあり、正確な結果を提供しません。\n代替として、より確実にクラッシュの原因を特定でき、ゲームを不正な状態にしないMixinTraceの使用をお勧めします。",
+ "iris.unsupported.pack.macos": "\nmacOSでは多くのシェーダーパックで問題が発生することが知られています。",
+ "options.iris.shadowDistance.sodium_tooltip": "影の描画距離は、シャドウパスで地形をどこまで遠くまで描画するかを制御します。距離を短くすると描画される地形が減り、フレームレートが向上します。このオプションは、シェーダーパック側で影の描画距離が明示的に指定されている場合は変更できません。実際の影の描画距離は「視界距離」の設定によって上限が決まります。",
+ "options.iris.colorSpace": "カラースペース",
+ "options.iris.colorSpace.sodium_tooltip": "画面を変換する先のカラースペースです。シェーダーパックの上に適用されます。よくわからない場合はSRGBを使用してください。"
+}

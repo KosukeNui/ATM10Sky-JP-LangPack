@@ -1,0 +1,6 @@
+{
+ "item.tiab.time_in_a_bottle": "瓶詰めの時間",
+ "item.tiab.time_in_a_bottle.tooltip.stored_time": "ためた時間 %s:%s:%s",
+ "item.tiab.time_in_a_bottle.tooltip.total_accumulated_time": "合計でためた時間 %s:%s:%s",
+ "emi.category.tiab.test": "TIABで使えないブロック"
+}

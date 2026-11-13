@@ -1,0 +1,10 @@
+{
+ "slider.title.everything": "すべて",
+ "log.warn.loadAnchorList": "ESM: アンカーリストが見つかりません。空のアンカーリストを作成します",
+ "log.error.loadAnchorList": "ESM: アンカーリストの読み込みエラー:\\n %s",
+ "log.error.saveAnchorList": "ESM: アンカーリストの保存エラー\\n %s",
+ "log.warn.loadMuffledList": "ESM: 消音リストが見つかりません。空の消音リストを作成します",
+ "log.error.loadMuffledList": "ESM: 消音サウンドリストの読み込みエラー:\\n %s",
+ "log.error.saveMuffledList": "ESM: 消音サウンドリストの保存エラー:\\n %s",
+ "forbiddenSounds.button": "消す音を設定"
+}

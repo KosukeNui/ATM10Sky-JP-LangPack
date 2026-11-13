@@ -1,0 +1,15 @@
+{
+ "ftbquestslangsplitter.configuration.title": "FTB Quests Lang Splitterの設定",
+ "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml": "FTB Quests Lang Splitterの設定",
+ "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml.title": "FTB Quests Lang Splitterの設定",
+ "ftbquestslangsplitter.commands.unsupported_locale": "言語%sには対応していません",
+ "ftbquestslangsplitter.commands.permission_denied": "このコマンドを実行する権限がありません",
+ "ftbquestslangsplitter.commands.lang_manager_force_saved": "言語マネージャーを強制保存しました",
+ "ftbquestslangsplitter.commands.added_missing_lang_entries": "足りない項目を%s個、言語%sに追加しました",
+ "ftbquestslangsplitter.commands.no_missing_entries": "言語%sに足りない項目はありません",
+ "ftbquestslangsplitter.commands.lang_file_split": "言語ファイル%sを分割しました",
+ "ftbquestslangsplitter.commands.all_lang_file_split": "すべての言語ファイルを分割しました",
+ "ftbquestslangsplitter.commands.file_already_exists": "%sにファイルがすでにあるため、飛ばします…",
+ "ftbquestslangsplitter.commands.purged_merged_files": "結合したファイルを消去しました",
+ "ftbquestslangsplitter.split.lang_saved_reminder": "編集モード中に言語ファイルが保存されたようです。作業がすべて終わったら分割するのを忘れないでください！"
+}
