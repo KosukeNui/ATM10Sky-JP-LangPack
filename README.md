@@ -21,15 +21,15 @@ Minecraft 1.21.1（NeoForge）用のモッドパック **[All the Mods 10: To th
 
 | ファイル | 中身 |
 |---|---|
-| `ATM10Sky-JP-1.0.0.zip` | 本体のリソースパック（MOD の翻訳） |
-| `ATM10Sky-JP-guidebooks-1.0.0.zip` | ガイドブックのリソースパック |
-| `ATM10Sky-JP-Config-1.0.0.zip` | クエストの翻訳（`config/ftbquests/quests/lang/ja_jp.snbt`） |
-| `ATM10Sky-JP-converter-1.0.0.html` | 変換ツール（ブラウザで開いて使います） |
+| `ATM10Sky-JP-1.0.1.zip` | 本体のリソースパック（MOD の翻訳） |
+| `ATM10Sky-JP-guidebooks-1.0.1.zip` | ガイドブックのリソースパック |
+| `ATM10Sky-JP-Config-1.0.1.zip` | クエストの翻訳（`config/ftbquests/quests/lang/ja_jp.snbt`） |
+| `ATM10Sky-JP-converter-1.0.1.html` | 変換ツール（ブラウザで開いて使います） |
 
 ## 導入方法（概要）
 
 1. 2つのリソースパックの zip を、解凍せずにインスタンスの `resourcepacks/` フォルダに入れます。
-2. `ATM10Sky-JP-Config-1.0.0.zip` を、インスタンスのフォルダ（`config` フォルダと同じ階層）で展開します。
+2. `ATM10Sky-JP-Config-1.0.1.zip` を、インスタンスのフォルダ（`config` フォルダと同じ階層）で展開します。
 3. 変換ツール（html）をブラウザで開き、インスタンスのフォルダを選んで、変換したファイルをインスタンスに上書きします。
 4. ゲームを起動し、**タイトル画面で**2つのリソースパックを有効にして、いちばん上（最優先）に置きます。言語を「日本語」にします。**そのあとで**ワールドに入ります。
 

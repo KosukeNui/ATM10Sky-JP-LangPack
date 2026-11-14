@@ -1,11 +1,11 @@
-ATM10 To the Sky 日本語化パック v1.0.0 導入手順（パック v2.3.1 対応）
+ATM10 To the Sky 日本語化パック v1.0.1 導入手順（パック v2.3.1 対応）
 ==========================================
 
 このパックは次の4つでできています。
-  - ATM10Sky-JP-1.0.0.zip            … 本体のリソースパック（MOD の翻訳）
-  - ATM10Sky-JP-guidebooks-1.0.0.zip … ガイドブックのリソースパック
-  - ATM10Sky-JP-Config-1.0.0.zip     … クエストの翻訳
-  - ATM10Sky-JP-converter-1.0.0.html … 変換ツール
+  - ATM10Sky-JP-1.0.1.zip            … 本体のリソースパック（MOD の翻訳）
+  - ATM10Sky-JP-guidebooks-1.0.1.zip … ガイドブックのリソースパック
+  - ATM10Sky-JP-Config-1.0.1.zip     … クエストの翻訳
+  - ATM10Sky-JP-converter-1.0.1.html … 変換ツール
 
 作業の前に、念のためインスタンスの kubejs フォルダと config フォルダを
 バックアップしてください。
@@ -22,7 +22,7 @@ ATM10 To the Sky 日本語化パック v1.0.0 導入手順（パック v2.3.1 �
 ------------------------------------------
 (2) クエストの翻訳を入れる
 ------------------------------------------
-  ATM10Sky-JP-Config-1.0.0.zip を、インスタンスのフォルダ
+  ATM10Sky-JP-Config-1.0.1.zip を、インスタンスのフォルダ
   （config フォルダと同じ階層）で展開します。
   config/ftbquests/quests/lang/ja_jp.snbt が置かれます。
 
@@ -36,7 +36,7 @@ ATM10 To the Sky 日本語化パック v1.0.0 導入手順（パック v2.3.1 �
   パックのスクリプトが出すツールチップ・JEI の説明・Silent Gear の独自トレイト・
   島の選択画面の説明を日本語にするための作業です。
 
-  (a) ATM10Sky-JP-converter-1.0.0.html をブラウザで開きます。
+  (a) ATM10Sky-JP-converter-1.0.1.html をブラウザで開きます。
   (b) 「フォルダを選ぶ」で、インスタンスのフォルダ（kubejs と config が
       入っているフォルダ）を選びます。ブラウザに「アップロード」と出ることが
       ありますが、ファイルはどこにも送信されません。
